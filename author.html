@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Про автора — Avengers</title>
+
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+
+    <!-- JS БІБЛІОТЕКА -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+
+<body>
+
+
+    <!-- ========================= -->
+    <!-- МЕНЮ -->
+    <!-- ========================= -->
+
+    <nav class="absolute top-5 right-5 md:top-[30px] md:right-[10px] z-[1000]">
+
+    <!-- ================= DESKTOP MENU ================= -->
+    <div class="hidden md:flex items-center gap-8">
+
+        <a
+            href="index.html"
+            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+        >
+            ГОЛОВНА
+        </a>
+
+        <div class="relative group">
+
+            <a
+                href="heroes.html"
+                class="text-yellow-400 no-underline text-lg hover:text-white transition"
+            >
+                ГЕРОЇ ▾
+            </a>
+
+            <div
+                class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max mt-2 bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
+            >
+                <a href="ironman.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    IRON MAN
+                </a>
+
+                <a href="captain.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    CAPTAIN AMERICA
+                </a>
+
+                <a href="thor.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    THOR
+                </a>
+
+                <a href="hulk.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    HULK
+                </a>
+
+                <a href="hawkeye.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    HAWKEYE
+                </a>
+
+                <a href="black-widow.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    BLACK WIDOW
+                </a>
+            </div>
+
+        </div>
+
+        <a
+            href="gallery.html"
+            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+        >
+            ГАЛЕРЕЯ
+        </a>
+
+        <div class="relative group">
+
+            <a
+                href="universe.html"
+                class="text-yellow-400 no-underline text-lg hover:text-white transition"
+            >
+                ВСЕСВІТ ▾
+            </a>
+
+            <div
+                class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max mt-2 bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
+            >
+                <a href="movies.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    ФІЛЬМИ
+                </a>
+
+                <a href="comics.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    КОМІКСИ
+                </a>
+
+                <a href="test.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    ТЕСТ
+                </a>
+            </div>
+
+        </div>
+
+        <a
+            href="author.html"
+            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+        >
+            ПРО АВТОРА
+        </a>
+
+    </div>
+
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div class="md:hidden">
+
+        <!-- Кнопка -->
+        <button
+            id="mobile-menu-btn"
+            type="button"
+            aria-label="Відкрити меню"
+            aria-expanded="false"
+            class="text-yellow-400 text-4xl leading-none bg-black/70 border border-yellow-400/40 rounded-lg px-3 py-1 hover:bg-yellow-400/20 transition"
+        >
+            ☰
+        </button>
+
+
+        <!-- Вертикальне меню -->
+        <div
+            id="mobile-menu"
+            class="hidden absolute right-0 top-14 w-64 bg-black/95 border border-yellow-400/40 rounded-xl shadow-2xl p-4"
+        >
+
+            <div class="flex flex-col gap-1">
+
+                <a
+                    href="index.html"
+                    class="mobile-link"
+                >
+                    ГОЛОВНА
+                </a>
+
+
+                <!-- ГЕРОЇ -->
+                <button
+                    id="mobile-heroes-btn"
+                    type="button"
+                    class="mobile-link text-left flex justify-between items-center"
+                >
+                    ГЕРОЇ
+                    <span id="heroes-arrow">▾</span>
+                </button>
+
+                <div
+                    id="mobile-heroes"
+                    class="hidden pl-4 border-l border-yellow-400/30"
+                >
+                    <a href="ironman.html" class="mobile-sublink">IRON MAN</a>
+                    <a href="captain.html" class="mobile-sublink">CAPTAIN AMERICA</a>
+                    <a href="thor.html" class="mobile-sublink">THOR</a>
+                    <a href="hulk.html" class="mobile-sublink">HULK</a>
+                    <a href="hawkeye.html" class="mobile-sublink">HAWKEYE</a>
+                    <a href="black-widow.html" class="mobile-sublink">BLACK WIDOW</a>
+                </div>
+
+
+                <a
+                    href="gallery.html"
+                    class="mobile-link"
+                >
+                    ГАЛЕРЕЯ
+                </a>
+
+
+                <!-- ВСЕСВІТ -->
+                <button
+                    id="mobile-universe-btn"
+                    type="button"
+                    class="mobile-link text-left flex justify-between items-center"
+                >
+                    ВСЕСВІТ
+                    <span id="universe-arrow">▾</span>
+                </button>
+
+                <div
+                    id="mobile-universe"
+                    class="hidden pl-4 border-l border-yellow-400/30"
+                >
+                    <a href="movies.html" class="mobile-sublink">ФІЛЬМИ</a>
+                    <a href="comics.html" class="mobile-sublink">КОМІКСИ</a>
+                    <a href="test.html" class="mobile-sublink">ТЕСТ</a>
+                </div>
+
+
+                <a
+                    href="author.html"
+                    class="mobile-link"
+                >
+                    ПРО АВТОРА
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+
+    <!-- ========================= -->
+    <!-- СТОРІНКА АВТОРА -->
+    <!-- ========================= -->
+
+    <main class="min-h-screen pt-32 pb-16 px-6">
+
+        <div class="max-w-5xl mx-auto">
+
+
+            <!-- ЗАГОЛОВОК -->
+
+            <h1
+                class="avengers-font text-6xl text-yellow-200 text-center mb-12"
+            >
+                ПРО АВТОРА
+            </h1>
+
+
+
+            <!-- ІНФОРМАЦІЯ -->
+
+            <section
+                class="max-w-3xl mx-auto bg-black/60 border border-yellow-400/30 rounded-2xl p-8 mb-12 shadow-[0_0_25px_rgba(250,204,21,0.15)]"
+            >
+
+                <h2 class="text-4xl text-yellow-400 text-center mb-6">
+                    AVENGERS PROJECT
+                </h2>
+
+                <p class="text-gray-200 text-lg text-center leading-relaxed">
+                    Цей вебсайт присвячений всесвіту Marvel та його культовим
+                    героям. Тут можна дізнатися більше про персонажів,
+                    переглянути фільми та комікси, а також пройти
+                    інтерактивний тест і визначити, на якого героя Marvel
+                    ти найбільше схожий.
+                </p>
+
+                <p class="text-gray-300 text-lg text-center leading-relaxed mt-5">
+                    Сайт створений як навчальний вебпроєкт із використанням
+                    HTML5, Tailwind CSS та JavaScript.
+                </p>
+
+            </section>
+<!-- ========================= -->
+<!-- ПРО МЕНЕ -->
+<!-- ========================= -->
+
+<section class="max-w-4xl mx-auto mb-16">
+
+    <h2 class="avengers-font text-5xl text-yellow-400 text-center mb-8">
+        ПРО МЕНЕ
+    </h2>
+
+    <div
+        class="bg-black/60 border border-yellow-400/30 rounded-2xl p-8 shadow-[0_0_25px_rgba(250,204,21,0.15)]"
+    >
+
+        <p class="text-gray-200 text-lg leading-relaxed text-center">
+            Привіт! мене звати Людмила і я є автором цього вебсайту, присвяченого всесвіту Marvel
+            та легендарній команді Avengers.
+        </p>
+
+        <p class="text-gray-300 text-lg leading-relaxed text-center mt-5">
+            я дуже люблю дивитись фільми та серіали,
+             вони  допомагають відволіктись,
+            і одним з найулюбленіших кіновсесвітів є Marvel,
+            тому цей фан-сайт я вирішила присвятити месникам.
+
+        </p>
+
+        <p class="text-gray-300 text-lg leading-relaxed text-center mt-5">
+            я спробувала поєднати гарний дизайн,
+            ітерактивний тест та багато різних картинок,
+             навчаюсь у університеті "Львівська Політехніка"( проєктування 
+            та програмування інтелект систем і пристроїв)
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- МОЯ ГАЛЕРЕЯ -->
+<!-- ========================= -->
+
+<section class="max-w-6xl mx-auto mb-16">
+
+    <h2 class="avengers-font text-5xl text-yellow-400 text-center mb-10">
+        МОЯ ГАЛЕРЕЯ та РОБОЧИЙ ПРОЦЕС
+    </h2>
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+        <!-- МОЄ ФОТО 1 -->
+
+        <div
+            class="group overflow-hidden rounded-2xl border border-yellow-400/30 bg-black/60
+                   transition duration-300 hover:scale-105 hover:border-yellow-400
+                   hover:shadow-[0_0_25px_rgba(250,204,21,0.4)]"
+        >
+
+            <img
+                src="images/me1.jpg"
+                alt="Фото автора"
+                class="w-full h-72 object-cover transition duration-500 group-hover:scale-110"
+            >
+
+        </div>
+
+
+        <!-- МОЄ ФОТО 2 -->
+
+        <div
+            class="group overflow-hidden rounded-2xl border border-yellow-400/30 bg-black/60
+                   transition duration-300 hover:scale-105 hover:border-yellow-400
+                   hover:shadow-[0_0_25px_rgba(250,204,21,0.4)]"
+        >
+
+            <img
+                src="images/me2.jpg"
+                alt="Фото автора"
+                class="w-full h-72 object-cover transition duration-500 group-hover:scale-110"
+            >
+
+        </div>
+
+
+        <!-- РОБОЧИЙ ПРОЦЕС 1 -->
+
+        <div
+            class="group overflow-hidden rounded-2xl border border-yellow-400/30 bg-black/60
+                   transition duration-300 hover:scale-105 hover:border-yellow-400
+                   hover:shadow-[0_0_25px_rgba(250,204,21,0.4)]"
+        >
+
+            <img
+                src="images/work1.jpg"
+                alt="Процес створення сайту"
+                class="w-full h-72 object-cover transition duration-500 group-hover:scale-110"
+            >
+
+        </div>
+
+
+        <!-- РОБОЧИЙ ПРОЦЕС 2 -->
+
+        <div
+            class="group overflow-hidden rounded-2xl border border-yellow-400/30 bg-black/60
+                   transition duration-300 hover:scale-105 hover:border-yellow-400
+                   hover:shadow-[0_0_25px_rgba(250,204,21,0.4)]"
+        >
+
+            <img
+                src="images/work2.jpg"
+                alt="Процес створення сайту"
+                class="w-full h-72 object-cover transition duration-500 group-hover:scale-110"
+            >
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+            <!-- ФОРМА -->
+
+            <section
+                class="max-w-3xl mx-auto"
+            >
+
+                <h2
+                    class="avengers-font text-5xl text-yellow-400 text-center mb-8"
+                >
+                    ЗВОРОТНИЙ ЗВ'ЯЗОК
+                </h2>
+
+
+                <form
+                    id="contactForm"
+action="https://formspree.io/f/maeybdkn"
+                       method="POST"
+                    class="bg-black/70 border border-yellow-400/30 rounded-2xl p-8 shadow-[0_0_25px_rgba(250,204,21,0.15)]"
+                    novalidate
+                >
+
+
+                    <!-- ІМ'Я -->
+
+                    <div class="mb-6">
+
+                        <label
+                            for="name"
+                            class="block text-yellow-400 text-lg mb-2"
+                        >
+                            Ім'я
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Введіть ваше ім'я"
+                            class="w-full bg-black/70 border border-yellow-400/30 rounded-lg px-4 py-3 text-white outline-none focus:border-yellow-400 transition"
+                        >
+
+                        <p
+                            id="nameError"
+                            class="text-red-400 mt-2 hidden"
+                        >
+                            Введіть ім'я від 2 до 30 символів.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="mb-6">
+
+                        <label
+                            for="email"
+                            class="block text-yellow-400 text-lg mb-2"
+                        >
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@gmail.com"
+                            class="w-full bg-black/70 border border-yellow-400/30 rounded-lg px-4 py-3 text-white outline-none focus:border-yellow-400 transition"
+                        >
+
+                        <p
+                            id="emailError"
+                            class="text-red-400 mt-2 hidden"
+                        >
+                            Введіть коректну електронну адресу.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ТЕЛЕФОН -->
+
+                    <div class="mb-6">
+
+                        <label
+                            for="phone"
+                            class="block text-yellow-400 text-lg mb-2"
+                        >
+                            Номер телефону
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+380XXXXXXXXX"
+                            class="w-full bg-black/70 border border-yellow-400/30 rounded-lg px-4 py-3 text-white outline-none focus:border-yellow-400 transition"
+                        >
+
+                        <p
+                            id="phoneError"
+                            class="text-red-400 mt-2 hidden"
+                        >
+                            Введіть номер у форматі +380XXXXXXXXX.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- ПОВІДОМЛЕННЯ -->
+
+                    <div class="mb-6">
+
+                        <label
+                            for="message"
+                            class="block text-yellow-400 text-lg mb-2"
+                        >
+                            Повідомлення
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Ваше повідомлення..."
+                            class="w-full bg-black/70 border border-yellow-400/30 rounded-lg px-4 py-3 text-white outline-none focus:border-yellow-400 transition resize-none"
+                        ></textarea>
+
+                        <p
+                            id="messageError"
+                            class="text-red-400 mt-2 hidden"
+                        >
+                            Повідомлення повинно містити щонайменше 10 символів.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- КНОПКА -->
+
+                    <div class="text-center">
+
+                        <button
+                            type="submit"
+                            class="px-10 py-4 bg-yellow-400 text-black font-bold rounded-xl hover:bg-white hover:scale-105 transition duration-300"
+                        >
+                            НАДІСЛАТИ
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ========================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================= -->
+
+    <script>
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        // REGEX
+        const nameRegex = /^[А-Яа-яЇїІіЄєҐґA-Za-z\s'-]{2,30}$/;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const phoneRegex = /^\+380\d{9}$/;
+
+        let valid = true;
+
+        // Ховаємо старі помилки
+        document.getElementById("nameError").classList.add("hidden");
+        document.getElementById("emailError").classList.add("hidden");
+        document.getElementById("phoneError").classList.add("hidden");
+        document.getElementById("messageError").classList.add("hidden");
+
+        // Перевірка імені
+        if (!nameRegex.test(name)) {
+            document.getElementById("nameError").classList.remove("hidden");
+            valid = false;
+        }
+
+        // Перевірка email
+        if (!emailRegex.test(email)) {
+            document.getElementById("emailError").classList.remove("hidden");
+            valid = false;
+        }
+
+        // Перевірка телефону
+        if (!phoneRegex.test(phone)) {
+            document.getElementById("phoneError").classList.remove("hidden");
+            valid = false;
+        }
+
+        // Перевірка повідомлення
+        if (message.length < 10) {
+            document.getElementById("messageError").classList.remove("hidden");
+            valid = false;
+        }
+
+        // Якщо є помилки — нічого не відправляємо
+        if (!valid) {
+            return;
+        }
+
+        // Успішне відправлення
+  // Реальне відправлення через Formspree
+fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+    headers: {
+        "Accept": "application/json"
+    }
+})
+.then(response => {
+    if (response.ok) {
+        Swal.fire({
+            title: "Повідомлення надіслано!",
+            text: "Дякуємо за ваш відгук!",
+            icon: "success",
+            confirmButtonText: "ОК",
+            background: "#111",
+            color: "#facc15",
+            confirmButtonColor: "#facc15"
+        });
+
+        form.reset();
+    } else {
+        throw new Error("Помилка відправлення");
+    }
+})
+.catch(() => {
+    Swal.fire({
+        title: "Помилка!",
+        text: "Не вдалося надіслати повідомлення. Спробуйте ще раз.",
+        icon: "error",
+        confirmButtonText: "ОК",
+        background: "#111",
+        color: "#fff",
+        confirmButtonColor: "#facc15"
+    });
+});
+    });
+</script>
+<script>
+const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+const heroesBtn = document.getElementById("mobile-heroes-btn");
+const heroesMenu = document.getElementById("mobile-heroes");
+const heroesArrow = document.getElementById("heroes-arrow");
+
+const universeBtn = document.getElementById("mobile-universe-btn");
+const universeMenu = document.getElementById("mobile-universe");
+const universeArrow = document.getElementById("universe-arrow");
+
+mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+
+    const isOpen = !mobileMenu.classList.contains("hidden");
+
+    mobileMenuBtn.setAttribute("aria-expanded", isOpen);
+    mobileMenuBtn.textContent = isOpen ? "✕" : "☰";
+});
+
+heroesBtn.addEventListener("click", () => {
+    heroesMenu.classList.toggle("hidden");
+
+    heroesArrow.textContent =
+        heroesMenu.classList.contains("hidden") ? "▾" : "▴";
+});
+
+universeBtn.addEventListener("click", () => {
+    universeMenu.classList.toggle("hidden");
+
+    universeArrow.textContent =
+        universeMenu.classList.contains("hidden") ? "▾" : "▴";
+});
+</script>
+
+</body>
+</html>

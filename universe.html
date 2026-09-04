@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Всесвіт — Avengers</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+
+    <!-- ========================= -->
+    <!-- МЕНЮ -->
+    <!-- ========================= -->
+
+    <nav class="absolute top-2 right-5 md:top-[30px] md:right-[10px] z-[9999]">
+
+    <!-- ================= DESKTOP MENU ================= -->
+    <div class="hidden md:flex items-center gap-8">
+
+        <a
+            href="index.html"
+            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+        >
+            ГОЛОВНА
+        </a>
+
+        <div class="relative group">
+
+            <a
+                href="heroes.html"
+                class="text-yellow-400 no-underline text-lg hover:text-white transition"
+            >
+                ГЕРОЇ ▾
+            </a>
+
+            <div
+                class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max mt-2 bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
+            >
+                <a href="ironman.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    IRON MAN
+                </a>
+
+                <a href="captain.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    CAPTAIN AMERICA
+                </a>
+
+                <a href="thor.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    THOR
+                </a>
+
+                <a href="hulk.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    HULK
+                </a>
+
+                <a href="hawkeye.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    HAWKEYE
+                </a>
+
+                <a href="black-widow.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    BLACK WIDOW
+                </a>
+            </div>
+
+        </div>
+
+        <a
+            href="gallery.html"
+            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+        >
+            ГАЛЕРЕЯ
+        </a>
+
+        <div class="relative group">
+
+            <a
+                href="universe.html"
+                class="text-yellow-400 no-underline text-lg hover:text-white transition"
+            >
+                ВСЕСВІТ ▾
+            </a>
+
+            <div
+                class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max mt-2 bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
+            >
+                <a href="movies.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    ФІЛЬМИ
+                </a>
+
+                <a href="comics.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    КОМІКСИ
+                </a>
+
+                <a href="test.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                    ТЕСТ
+                </a>
+            </div>
+
+        </div>
+
+        <a
+            href="author.html"
+            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+        >
+            ПРО АВТОРА
+        </a>
+
+    </div>
+
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div class="md:hidden">
+
+        <!-- Кнопка -->
+        <button
+            id="mobile-menu-btn"
+            type="button"
+            aria-label="Відкрити меню"
+            aria-expanded="false"
+            class="text-yellow-400 text-4xl leading-none bg-black/70 border border-yellow-400/40 rounded-lg px-3 py-1 hover:bg-yellow-400/20 transition"
+        >
+            ☰
+        </button>
+
+
+        <!-- Вертикальне меню -->
+        <div
+            id="mobile-menu"
+            class="hidden absolute right-0 top-14 w-64 bg-black/95 border border-yellow-400/40 rounded-xl shadow-2xl p-4"
+        >
+
+            <div class="flex flex-col gap-1">
+
+                <a
+                    href="index.html"
+                    class="mobile-link"
+                >
+                    ГОЛОВНА
+                </a>
+
+
+                <!-- ГЕРОЇ -->
+                <button
+                    id="mobile-heroes-btn"
+                    type="button"
+                    class="mobile-link text-left flex justify-between items-center"
+                >
+                    ГЕРОЇ
+                    <span id="heroes-arrow">▾</span>
+                </button>
+
+                <div
+                    id="mobile-heroes"
+                    class="hidden pl-4 border-l border-yellow-400/30"
+                >
+                    <a href="ironman.html" class="mobile-sublink">IRON MAN</a>
+                    <a href="captain.html" class="mobile-sublink">CAPTAIN AMERICA</a>
+                    <a href="thor.html" class="mobile-sublink">THOR</a>
+                    <a href="hulk.html" class="mobile-sublink">HULK</a>
+                    <a href="hawkeye.html" class="mobile-sublink">HAWKEYE</a>
+                    <a href="black-widow.html" class="mobile-sublink">BLACK WIDOW</a>
+                </div>
+
+
+                <a
+                    href="gallery.html"
+                    class="mobile-link"
+                >
+                    ГАЛЕРЕЯ
+                </a>
+
+
+                <!-- ВСЕСВІТ -->
+                <button
+                    id="mobile-universe-btn"
+                    type="button"
+                    class="mobile-link text-left flex justify-between items-center"
+                >
+                    ВСЕСВІТ
+                    <span id="universe-arrow">▾</span>
+                </button>
+
+                <div
+                    id="mobile-universe"
+                    class="hidden pl-4 border-l border-yellow-400/30"
+                >
+                    <a href="movies.html" class="mobile-sublink">ФІЛЬМИ</a>
+                    <a href="comics.html" class="mobile-sublink">КОМІКСИ</a>
+                    <a href="test.html" class="mobile-sublink">ТЕСТ</a>
+                </div>
+
+
+                <a
+                    href="author.html"
+                    class="mobile-link"
+                >
+                    ПРО АВТОРА
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+    <!-- ========================= -->
+    <!-- ЗАГОЛОВОК -->
+    <!-- ========================= -->
+
+    <header class="pt-28 pb-12">
+
+        <h1
+            class="avengers-font text-6xl text-yellow-200 text-center"
+        >
+            UNIVERSE
+        </h1>
+
+    </header>
+
+
+
+<!-- КАРТКИ -->
+
+<main class="px-6 pb-16">
+
+<div class="grid gap-6 max-w-5xl mx-auto"
+     style="grid-template-columns: repeat(3, 1fr);">
+
+        <!-- ФІЛЬМИ -->
+
+        <a
+            href="movies.html"
+            class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-500 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
+        >
+
+            <div class="h-80 overflow-hidden">
+
+                <img
+                    src="images/movies.jpg"
+                    alt="Фільми Marvel"
+                    class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                >
+
+            </div>
+
+            <h2
+                class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white transition"
+            >
+                ФІЛЬМИ
+            </h2>
+
+        </a>
+
+
+        <!-- КОМІКСИ -->
+
+        <a
+            href="comics.html"
+            class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-500 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
+        >
+
+            <div class="h-80 overflow-hidden">
+
+                <img
+                    src="images/comics.jpg"
+                    alt="Комікси Marvel"
+                    class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                >
+
+            </div>
+
+            <h2
+                class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white transition"
+            >
+                КОМІКСИ
+            </h2>
+
+        </a>
+
+
+        <!-- ТЕСТ -->
+
+        <a
+            href="test.html"
+            class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-500 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
+        >
+
+            <div class="h-80 overflow-hidden">
+
+                <img
+                    src="images/test.jpg"
+                    alt="Тест Marvel"
+                    class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+                >
+
+            </div>
+
+            <h2
+                class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white transition"
+            >
+                ТЕСТ
+            </h2>
+
+        </a>
+<div class="universe-cards"></div>
+    </div>
+
+</main>
+<script>
+const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+const heroesBtn = document.getElementById("mobile-heroes-btn");
+const heroesMenu = document.getElementById("mobile-heroes");
+const heroesArrow = document.getElementById("heroes-arrow");
+
+const universeBtn = document.getElementById("mobile-universe-btn");
+const universeMenu = document.getElementById("mobile-universe");
+const universeArrow = document.getElementById("universe-arrow");
+
+mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+
+    const isOpen = !mobileMenu.classList.contains("hidden");
+
+    mobileMenuBtn.setAttribute("aria-expanded", isOpen);
+    mobileMenuBtn.textContent = isOpen ? "✕" : "☰";
+});
+
+heroesBtn.addEventListener("click", () => {
+    heroesMenu.classList.toggle("hidden");
+
+    heroesArrow.textContent =
+        heroesMenu.classList.contains("hidden") ? "▾" : "▴";
+});
+
+universeBtn.addEventListener("click", () => {
+    universeMenu.classList.toggle("hidden");
+
+    universeArrow.textContent =
+        universeMenu.classList.contains("hidden") ? "▾" : "▴";
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>nick Fury — Avengers</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="nick-fury-page">
+
+    <!--  МЕНЮ -->
+         <nav class="absolute top-[30px] right-[40px] z-[1000] flex items-center gap-8">
+
+        <!-- ГОЛОВНА -->
+
+        <a
+            href="index.html"
+            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+        >
+            ГОЛОВНА
+        </a>
+
+
+        <!-- ГЕРОЇ -->
+
+        <div class="relative group">
+
+            <a
+                href="heroes.html"
+                class="text-yellow-400 no-underline text-lg hover:text-white transition"
+            >
+                ГЕРОЇ▾
+            </a>
+
+            <div
+                class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max mt-2 bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
+            >
+
+                <a
+                    href="ironman.html"
+                    class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap"
+                >
+                    IRON MAN
+                </a>
+
+                <a
+                    href="captain.html"
+                    class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap"
+                >
+                    CAPTAIN AMERICA
+                </a>
+
+                <a
+                    href="thor.html"
+                    class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap"
+                >
+                    THOR
+                </a>
+
+                <a
+                    href="hulk.html"
+                    class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap"
+                >
+                    HULK
+                </a>
+
+                <a
+                    href="hawkeye.html"
+                    class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap"
+                >
+                    HAWKEYE
+                </a>
+
+                <a
+                    href="black-widow.html"
+                    class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap"
+                >
+                    BLACK WIDOW
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ГАЛЕРЕЯ -->
+
+        <a
+            href="gallery.html"
+            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+        >
+            ГАЛЕРЕЯ
+        </a>
+
+
+        <!-- ВСЕСВІТ -->
+
+        <div class="relative group">
+
+            <a
+                href="universe.html"
+                class="text-yellow-400 no-underline text-lg hover:text-white transition"
+            >
+                ВСЕСВІТ▾
+            </a>
+
+            <div
+                class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max mt-2 bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
+            >
+
+                <a
+                    href="movies.html"
+                    class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap"
+                >
+                    ФІЛЬМИ
+                </a>
+
+                <a
+                    href="comics.html"
+                    class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap"
+                >
+                    КОМІКСИ
+                </a>
+
+                <a
+                    href="test.html"
+                    class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap"
+                >
+                    ТЕСТ
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ПРО АВТОРА -->
+
+        <a
+            href="author.html"
+            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+        >
+            ПРО АВТОРА
+        </a>
+
+    </nav>
+
+   <main class="min-h-screen px-6 pt-32 pb-12">
+
+    <h1 class="avengers-font text-5xl text-yellow-400 text-center mb-10">
+        NICK FURY
+    </h1>
+
+    <!-- ФОТО + ІНФОРМАЦІЯ -->
+
+    <section class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+        <!-- ФОТО -->
+
+        <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50 transition duration-300 hover:border-yellow-400 hover:shadow-[0_0_30px_rgba(250,204,21,0.5)]">
+
+            <img
+                src="images/nick-fury.jpg"
+                alt="Nick Fury"
+                class="w-full h-[500px] object-cover object-top transition duration-500 hover:scale-110"
+            >
+
+        </div>
+
+
+        <!-- ІНФОРМАЦІЯ -->
+
+        <div class="bg-black/70 border border-yellow-400/30 rounded-xl p-8">
+
+            <!-- ОСНОВНА ІНФОРМАЦІЯ -->
+
+            <div class="mb-8">
+
+                <h3 class="avengers-font text-2xl text-yellow-300 mb-3">
+                    ОСНОВНА ІНФОРМАЦІЯ
+                </h3>
+
+                <div class="space-y-2 text-white">
+
+                    <p>
+                        <span class="text-yellow-400">Справжнє ім'я:</span>
+                        Ніколас Джозеф Ф'юрі
+                    </p>
+
+                    <p>
+                        <span class="text-yellow-400">Професія:</span>
+                        Директор S.H.I.E.L.D.
+                    </p>
+
+                    <p>
+                        <span class="text-yellow-400">Альтер-его:</span>
+                        Nick Fury
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- НАВИЧКИ -->
+
+            <div class="mb-8">
+
+                <h3 class="avengers-font text-2xl text-yellow-300 mb-3">
+                    НАВИЧКИ
+                </h3>
+
+                <ul class="space-y-2 text-white list-disc list-inside">
+
+                    <li>Стратегічне мислення</li>
+                    <li>Лідерські здібності</li>
+                    <li>Розвідка та шпигунство</li>
+                    <li>Володіння зброєю</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- S.H.I.E.L.D. -->
+
+            <div>
+
+                <h3 class="avengers-font text-2xl text-yellow-300 mb-3">
+                    S.H.I.E.L.D.
+                </h3>
+
+                <ul class="space-y-2 text-white list-disc list-inside">
+
+                    <li>Керівництво організацією</li>
+                    <li>Координація агентів</li>
+                    <li>Збір секретної інформації</li>
+                    <li>Захист Землі від глобальних загроз</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ОСНОВНІ ХАРАКТЕРИСТИКИ -->
+
+    <section class="max-w-6xl mx-auto mt-12">
+
+        <h2 class="avengers-font text-4xl text-yellow-400 text-center mb-8">
+            ОСНОВНІ ХАРАКТЕРИСТИКИ
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <div class="bg-black/70 border border-yellow-400/30 rounded-xl p-5 text-center transition duration-300 hover:-translate-y-2 hover:border-yellow-400 hover:shadow-[0_0_20px_rgba(250,204,21,0.35)]">
+
+                <h3 class="text-yellow-400 text-xl mb-3">
+                    ЛІДЕРСТВО
+                </h3>
+
+                <p class="text-white">
+                    100/100
+                </p>
+
+            </div>
+
+
+            <div class="bg-black/70 border border-yellow-400/30 rounded-xl p-5 text-center transition duration-300 hover:-translate-y-2 hover:border-yellow-400 hover:shadow-[0_0_20px_rgba(250,204,21,0.35)]">
+
+                <h3 class="text-yellow-400 text-xl mb-3">
+                    СТРАТЕГІЯ
+                </h3>
+
+                <p class="text-white">
+                    100/100
+                </p>
+
+            </div>
+
+
+            <div class="bg-black/70 border border-yellow-400/30 rounded-xl p-5 text-center transition duration-300 hover:-translate-y-2 hover:border-yellow-400 hover:shadow-[0_0_20px_rgba(250,204,21,0.35)]">
+
+                <h3 class="text-yellow-400 text-xl mb-3">
+                    РОЗВІДКА
+                </h3>
+
+                <p class="text-white">
+                    98/100
+                </p>
+
+            </div>
+
+
+            <div class="bg-black/70 border border-yellow-400/30 rounded-xl p-5 text-center transition duration-300 hover:-translate-y-2 hover:border-yellow-400 hover:shadow-[0_0_20px_rgba(250,204,21,0.35)]">
+
+                <h3 class="text-yellow-400 text-xl mb-3">
+                    БОЙОВІ НАВИЧКИ
+                </h3>
+
+                <p class="text-white">
+                    90/100
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ЦИТАТА -->
+
+    <section class="w-full flex justify-end mt-16 mb-4">
+
+        <div class="w-full max-w-4xl mr-16">
+
+            <blockquote class="text-2xl text-red-600 text-right italic font-semibold">
+                «Я завжди маю план.»
+            </blockquote>
+
+            <p class="text-red-600 text-right mt-3">
+                — Nick Fury
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ПОВЕРНЕННЯ -->
+
+    <div class="text-center mt-4">
+
+        <a
+            href="heroes.html"
+            class="inline-block px-6 py-3 border border-yellow-200 text-yellow-400 rounded-lg hover:bg-yellow-400 hover:text-black transition font-bold"
+        >
+            ← НАЗАД ДО ГЕРОЇВ
+        </a>
+
+    </div>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: red;
+}
+
+.intro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background-color: black;
+    animation: gifDisappear 5s forwards;
+}
+
+.intro-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    animation: contentMove 5s forwards;
+}
+
+@keyframes contentMove {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    to {
+        opacity: 1;
+        top: 30px;
+        left: 40px;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes gifDisappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+body {
+    background-image: url("images/fon.jpg");
+    background-size: content;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: goldenrod;
+    text-shadow: 0 2px 10px black;
+}
+
+.avengers-font {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+@media (max-width: 768px) {
+
+    .intro img {
+        object-fit: contain;
+        background-color: black;
+    }
+}
+.ironman-page {
+    background-image: url("images/Tony\ Stark.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.captain-page {
+background-image:
+    linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
+    url("images/cap1.jpg");
+        background-size: cover;
+    background-position: center 30%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.thor-page {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/thor.png");
+
+    background-size: cover;
+    background-position: center 60%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.hulk-page {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/hulk1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.hawkeye-page {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/hawkeye2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.black-widow-page {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/black-widow1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.nick-fury-page {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/nick.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+}
