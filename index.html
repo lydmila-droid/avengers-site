@@ -1,96 +1,192 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    
-<meta charset="UTF-8">
-<title>"Avengers"</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="./dist/output.css">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="intro">
-    <img src="images/avengers-intro.gif" alt="Avengers-intro">
 
-    <div class="intro-content">
-<h1 class="avengers-font text-5xl sm:text-6xl md:text-8xl text-red-400 whitespace-nowrap">
-    THE AVENGERS
-</h1>   
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Avengers</title>
+
+    <link rel="icon" type="image/png" href="images/Avengers-symbol.webp">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+<body>
+
+    <div class="intro">
+
+        <img src="images/avengers-intro.gif" alt="Avengers intro">
+
+        <div class="intro-content">
+
+        <h1 class="avengers-font text-5xl sm:text-6xl md:text-8xl text-[#d53b3b] whitespace-nowrap">
+            THE AVENGERS
+        </h1>
+
         <p>Наймогутніші герої Землі</p>
+
     </div>
-    
-     <nav class="main-nav absolute top-[30px] right-[40px] z-10 flex gap-8">
-    <a href="index.html"
-   class="text-yellow-400 no-underline text-lg hover:text-white transition">
-    ГОЛОВНА
-</a>
+
+
+    <nav class="main-nav absolute top-[30px] right-[40px] z-10 flex gap-8">
+
+        <!-- ГОЛОВНА -->
+        <a
+            href="index.html"
+            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+        >
+            ГОЛОВНА
+        </a>
+
+
+        <!-- ГЕРОЇ -->
         <div class="nav-item relative group">
-         <a href="heroes.html"
-                    class="text-yellow-400 no-underline text-lg hover:text-white transition">
-ГЕРОЇ▾
-        </a>
-         <div class="absolute top-full left-0 hidden flex-col bg-black/80 whitespace-nowrap group-hover:flex">
-              <a href="ironman.html"
-                 class="whitespace-nowrap px-4 py-2 hover:bg-yellow-400/25 hover:text-white">
-    IRON MAN
-              </a>
-            <a href="captain.html"
-            class="whitespace-nowrap px-4 py-2 hover:bg-yellow-400/25 hover:text-white">
-        CAPTAIN AMERICA
+
+            <a
+                href="heroes.html"
+                class="text-yellow-400 no-underline text-lg hover:text-white transition"
+            >
+                ГЕРОЇ ▾
             </a>
-            <a href="thor.html"
-              class="whitespace-nowrap px-4 py-2 hover:bg-yellow-400/25 hover:text-white">
-        THOR
-        </a>
-         <a href="hulk.html"
-              class="whitespace-nowrap px-4 py-2 hover:bg-yellow-400/25 hover:text-white">
-        HULK
-         </a>
-         <a href="hawkeye.html"
-              class="whitespace-nowrap px-4 py-2 hover:bg-yellow-400/25 hover:text-white">
-         HAWKEYE
-         </a>
-         <a href="black-widow.html"
-              class="whitespace-nowrap px-4 py-2 hover:bg-yellow-400/25 hover:text-white">
-              BLACK WIDOW
-         </a>
+
+            <div
+                class="absolute top-full left-0 hidden flex-col bg-black/80 whitespace-nowrap group-hover:flex"
+            >
+
+                <a
+                    href="ironman.html"
+                    class="px-4 py-2 hover:bg-yellow-400/25 hover:text-white"
+                >
+                    IRON MAN
+                </a>
+
+                <a
+                    href="captain.html"
+                    class="px-4 py-2 hover:bg-yellow-400/25 hover:text-white"
+                >
+                    CAPTAIN AMERICA
+                </a>
+
+                <a
+                    href="thor.html"
+                    class="px-4 py-2 hover:bg-yellow-400/25 hover:text-white"
+                >
+                    THOR
+                </a>
+
+                <a
+                    href="hulk.html"
+                    class="px-4 py-2 hover:bg-yellow-400/25 hover:text-white"
+                >
+                    HULK
+                </a>
+
+                <a
+                    href="hawkeye.html"
+                    class="px-4 py-2 hover:bg-yellow-400/25 hover:text-white"
+                >
+                    HAWKEYE
+                </a>
+
+                <a
+                    href="black-widow.html"
+                    class="px-4 py-2 hover:bg-yellow-400/25 hover:text-white"
+                >
+                    BLACK WIDOW
+                </a>
+
+            </div>
+
         </div>
-    </div>
-     
-         <a href="gallery.html"
-                     class="text-yellow-400 no-underline text-lg hover:text-white transition">
+
+
+        <!-- ГАЛЕРЕЯ -->
+        <a
+            href="gallery.html"
+            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+        >
             ГАЛЕРЕЯ
-         </a>
-         <div class="nav-item relative group">
-    <a href="universe.html"
-       class="text-yellow-400 no-underline text-lg hover:text-white transition">
-        ВСЕСВІТ▾
+        </a>
+
+
+        <!-- ВСЕСВІТ -->
+        <div class="nav-item relative group">
+
+            <a
+                href="universe.html"
+                class="text-yellow-400 no-underline text-lg hover:text-white transition"
+            >
+                ВСЕСВІТ ▾
+            </a>
+
+            <div
+                class="absolute top-full left-0 hidden flex-col bg-black/80 whitespace-nowrap group-hover:flex"
+            >
+
+                <a
+                    href="movies.html"
+                    class="px-4 py-2 hover:bg-yellow-400/25 hover:text-white"
+                >
+                    ФІЛЬМИ
+                </a>
+
+                <a
+                    href="comics.html"
+                    class="px-4 py-2 hover:bg-yellow-400/25 hover:text-white"
+                >
+                    КОМІКСИ
+                </a>
+
+                <a
+                    href="test.html"
+                    class="px-4 py-2 hover:bg-yellow-400/25 hover:text-white"
+                >
+                    ТЕСТ
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ПРО АВТОРА -->
+        <a
+            href="author.html"
+            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+        >
+            ПРО АВТОРА
+        </a>
+
+    </nav>
+    </div>
+    <footer class="site-footer">
+    <div class="footer-content">
+
+    <a href="mailto:liudmyla.kuzmych.pp.2025@lpnu.ua">
+EMAIL:liudmyla.kuzmych.pp.2025@lpnu.ua
+    </a>
+    <p>
+        © 2026 Avengers. Усі права захищені.
+    </p>
+
+    <a href="tel:+380683544820">
+       NUMBER: +380 68 354 4820
     </a>
 
-    <div class="absolute top-full left-0 hidden flex-col bg-black/80 whitespace-nowrap group-hover:flex">
-        <a href="movies.html"
-           class="px-4 py-2 hover:bg-yellow-400/25 hover:text-white">
-            ФІЛЬМИ
-        </a>
+    
 
-        <a href="comics.html"
-           class="px-4 py-2 hover:bg-yellow-400/25 hover:text-white">
-            КОМІКСИ
-        </a>
-
-        <a href="test.html"
-           class="px-4 py-2 hover:bg-yellow-400/25 hover:text-white">
-            ТЕСТ
-        </a>
-    </div>
 </div>
-         <a href="author.html"
-                        class="text-yellow-400 no-underline text-lg hover:text-white transition">
-ПРО АВТОРА
-         </a>
 
-        </nav>
-    </div>   
+</footer>
 
 </body>
 
