@@ -20,7 +20,6 @@
 </head>
 
 <body>
-<body>
 
     <div class="intro">
 
@@ -37,8 +36,7 @@
     </div>
 
 
-    <nav class="main-nav absolute top-[30px] right-[40px] z-10 flex gap-8">
-
+<nav class="main-nav hidden md:flex absolute top-[30px] right-[40px] z-10 gap-8">
         <!-- ГОЛОВНА -->
         <a
             href="index.html"
@@ -167,12 +165,177 @@
         </a>
 
     </nav>
+
+<!-- MOBILE MENU -->
+
+<div class="md:hidden absolute top-5 right-5 z-[9999]">
+    <!-- Кнопка -->
+    <button
+        id="mobile-menu-btn"
+        type="button"
+        aria-label="Відкрити меню"
+        aria-expanded="false"
+        class="text-yellow-400 text-4xl leading-none bg-black/70 border border-yellow-400/40 rounded-lg px-3 py-1 hover:bg-yellow-400/20 transition"
+    >
+        ☰
+    </button>
+
+    <!-- Вертикальне меню -->
+    <div
+        id="mobile-menu"
+        class="hidden absolute right-0 top-14 w-64 bg-black/95 border border-yellow-400/40 rounded-xl shadow-2xl p-4"
+    >
+
+        <div class="flex flex-col gap-1">
+
+            <a href="index.html" class="mobile-link">
+                ГОЛОВНА
+            </a>
+
+            <!-- ГЕРОЇ -->
+            <button
+                id="mobile-heroes-btn"
+                type="button"
+                class="mobile-link text-left flex justify-between items-center"
+            >
+                ГЕРОЇ
+                <span id="heroes-arrow">▾</span>
+            </button>
+
+            <div
+                id="mobile-heroes"
+                class="hidden pl-4 border-l border-yellow-400/30"
+            >
+                <a href="ironman.html" class="mobile-sublink">IRON MAN</a>
+                <a href="captain.html" class="mobile-sublink">CAPTAIN AMERICA</a>
+                <a href="thor.html" class="mobile-sublink">THOR</a>
+                <a href="hulk.html" class="mobile-sublink">HULK</a>
+                <a href="hawkeye.html" class="mobile-sublink">HAWKEYE</a>
+                <a href="black-widow.html" class="mobile-sublink">BLACK WIDOW</a>
+            </div>
+
+            <a href="gallery.html" class="mobile-link">
+                ГАЛЕРЕЯ
+            </a>
+
+            <!-- ВСЕСВІТ -->
+            <button
+                id="mobile-universe-btn"
+                type="button"
+                class="mobile-link text-left flex justify-between items-center"
+            >
+                ВСЕСВІТ
+                <span id="universe-arrow">▾</span>
+            </button>
+
+            <div
+                id="mobile-universe"
+                class="hidden pl-4 border-l border-yellow-400/30"
+            >
+                <a href="movies.html" class="mobile-sublink">ФІЛЬМИ</a>
+                <a href="comics.html" class="mobile-sublink">КОМІКСИ</a>
+                <a href="test.html" class="mobile-sublink">ТЕСТ</a>
+            </div>
+
+            <a href="author.html" class="mobile-link">
+                ПРО АВТОРА
+            </a>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- MOBILE MENU STYLES -->
+
+<style>
+    .mobile-link {
+        display: block;
+        width: 100%;
+        padding: 12px 10px;
+        color: #facc15;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+
+    .mobile-link:hover {
+        background: rgba(250, 204, 21, 0.15);
+        color: white;
+    }
+
+    .mobile-sublink {
+        display: block;
+        padding: 9px 8px;
+        color: #facc15;
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 5px;
+        transition: 0.2s;
+    }
+
+    .mobile-sublink:hover {
+        background: rgba(250, 204, 21, 0.15);
+        color: white;
+    }
+</style>
+
+
+<!-- MOBILE MENU JAVASCRIPT -->
+
+<script>
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    const heroesBtn = document.getElementById("mobile-heroes-btn");
+    const heroesMenu = document.getElementById("mobile-heroes");
+    const heroesArrow = document.getElementById("heroes-arrow");
+
+    const universeBtn = document.getElementById("mobile-universe-btn");
+    const universeMenu = document.getElementById("mobile-universe");
+    const universeArrow = document.getElementById("universe-arrow");
+
+    // Головне меню
+    mobileMenuBtn.addEventListener("click", () => {
+
+        mobileMenu.classList.toggle("hidden");
+
+        const isOpen = !mobileMenu.classList.contains("hidden");
+
+        mobileMenuBtn.setAttribute("aria-expanded", isOpen);
+
+        mobileMenuBtn.textContent = isOpen ? "✕" : "☰";
+    });
+
+    // ГЕРОЇ
+    heroesBtn.addEventListener("click", () => {
+
+        heroesMenu.classList.toggle("hidden");
+
+        heroesArrow.textContent =
+            heroesMenu.classList.contains("hidden") ? "▾" : "▴";
+    });
+
+    // ВСЕСВІТ
+    universeBtn.addEventListener("click", () => {
+
+        universeMenu.classList.toggle("hidden");
+
+        universeArrow.textContent =
+            universeMenu.classList.contains("hidden") ? "▾" : "▴";
+    });
+</script>
+
+
     </div>
     <footer class="site-footer">
     <div class="footer-content">
 
     <a href="mailto:liudmyla.kuzmych.pp.2025@lpnu.ua">
-EMAIL:liudmyla.kuzmych.pp.2025@lpnu.ua
+EMAIL:  liudmyla.kuzmych.pp.2025@lpnu.ua
     </a>
     <p>
         © 2026 Avengers. Усі права захищені.
