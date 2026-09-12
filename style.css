@@ -63,7 +63,7 @@ h1 {
 body {
     min-height: 100vh;
     background-image: url("images/fon.jpg");
-    background-size: content;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
@@ -84,7 +84,7 @@ body {
     }
 }
 .ironman-page {
-    background-image: url("images/Tony\ Stark.jpg");
+    background-image: url("images/Tony-Stark.jpg");
     background-size: cover;
     background-position: center 30%;
     background-attachment: fixed;
@@ -368,4 +368,7 @@ color: #aaa;
     to {
         opacity: 0;
     }
+}
+main {
+    padding-right: 15px;
 }
