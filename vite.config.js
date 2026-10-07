@@ -20,7 +20,7 @@ export default defineConfig({
         ironman: 'ironman.html',
         thor: 'thor.html',
         captain1: 'captain1.html',
-        black_widow1: 'black_widow1.html',
+        black_widow: 'black_widow.html',
         nick_fury: 'nick_fury.html',
       },
     },
