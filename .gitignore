@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+optimize-images.mjs
+compress-more.mjs
+optimize-images.mjs
+compress-more.mjs

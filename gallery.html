@@ -7,7 +7,9 @@
 
     <title>Галерея — Avengers</title>
 
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/src/style.css">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
@@ -44,7 +46,7 @@
             </a>
 
             <div
-                class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max mt-2 bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
+                class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max  bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
             >
                 <a href="ironman.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
                     IRON MAN
@@ -90,7 +92,7 @@
             </a>
 
             <div
-                class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max mt-2 bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
+                class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max  bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
             >
                 <a href="movies.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
                     ФІЛЬМИ
@@ -223,40 +225,6 @@
     </svg>
 </a>
 
-<!-- MOBILE MENU STYLES -->
-<style>
-    .mobile-link {
-        display: block;
-        width: 100%;
-        padding: 12px 10px;
-        color: #facc15;
-        text-decoration: none;
-        font-size: 17px;
-        font-weight: 600;
-        border-radius: 6px;
-        transition: 0.2s;
-    }
-
-    .mobile-link:hover {
-        background: rgba(250, 204, 21, 0.15);
-        color: white;
-    }
-
-    .mobile-sublink {
-        display: block;
-        padding: 9px 8px;
-        color: #facc15;
-        text-decoration: none;
-        font-size: 14px;
-        border-radius: 5px;
-        transition: 0.2s;
-    }
-
-    .mobile-sublink:hover {
-        background: rgba(250, 204, 21, 0.15);
-        color: white;
-    }
-</style>
 
 
 <!-- MOBILE MENU JAVASCRIPT -->
@@ -309,16 +277,16 @@
 
     <main class="min-h-screen px-6 pt-32 pb-12">
 
-        <h1 class="avengers-font text-5xl text-yellow-400 text-center mb-10">
+        <h1 class="avengers-font text-5xl text-orange-500 text-center mb-10">
             GALLERY
         </h1>
-<section class="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-            <a href="images/tony4.jpg"
+            <a href="images/tony4.webp"
                class="glightbox"                >
             <img
-                src="images/tony4.jpg"
+                src="/images/tony4.webp"
                 alt="Iron Man"
                 class="w-full h-72 object-cover transition duration-500 hover:scale-110"
             >
@@ -326,12 +294,12 @@
         </div>
 
         <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-            <a href="images/cap4.jpg"
+            <a href="images/cap4.webp"
              class="glightbox"
             >
 
             <img
-                src="images/cap4.jpg"
+                src="/images/cap4.webp"
                 alt="Captain America"
                 class="w-full h-72 object-cover transition duration-500 hover:scale-110"
             >
@@ -339,11 +307,11 @@
         </div>
 
         <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-            <a href="images/thor4.jpg"
+            <a href="images/thor4.webp"
              class="glightbox"
                 >
             <img
-                src="images/thor4.jpg"
+                src="/images/thor4.webp"
                 alt="Thor"
                 class="w-full h-72 object-cover transition duration-500 hover:scale-110"
             >
@@ -351,10 +319,10 @@
         </div>
 
         <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-            <a href="images/hulk4.jpg"
+            <a href="images/hulk4.webp"
              class="glightbox">
             <img
-                src="images/hulk4.jpg"
+                src="/images/hulk4.webp"
                 alt="Hulk"
                 class="w-full h-72 object-cover transition duration-500 hover:scale-110"
             >
@@ -362,10 +330,10 @@
         </div>
 
         <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-            <a href="images/hawkeye4.jpg"
+            <a href="images/hawkeye4.webp"
              class="glightbox">
             <img
-                src="images/hawkeye4.jpg"
+                src="/images/hawkeye4.webp"
                 alt="Hawkeye"
                 class="w-full h-72 object-cover transition duration-500 hover:scale-110"
             >
@@ -373,77 +341,77 @@
         </div>
 
         <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-            <a href="images/black-widow4.jpg"
+            <a href="images/black-widow4.webp"
              class="glightbox">
 
              <img
-                src="images/black-widow4.jpg"
+                src="/images/black-widow4.webp"
                 alt="Black Widow"
                 class="w-full h-72 object-cover transition duration-500 hover:scale-110"
             >
             </a>
         </div>
  <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-            <a href="images/spiderman4.jpg"
+            <a href="images/spiderman4.webp"
              class="glightbox">
 
              <img
-                src="images/spiderman4.jpg"
+                src="/images/spiderman4.webp"
                 alt="Spiderman"
                 class="w-full h-72 object-cover transition duration-500 hover:scale-110"
             >
             </a>
         </div>
          <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-            <a href="images/falcon4.jpg"
+            <a href="images/falcon4.webp"
              class="glightbox">
 
              <img
-                src="images/falcon4.jpg"
+                src="/images/falcon4.webp"
                 alt="Falcon"
                 class="w-full h-72 object-cover transition duration-500 hover:scale-110"
             >
             </a>
         </div>
          <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-            <a href="images/black4.jpg"
+            <a href="images/black4.webp"
             class="glightbox">
 
              <img
-                src="images/black4.jpg"
+                src="/images/black4.webp"
                 alt="Black Panther"
                 class="w-full h-72 object-cover transition duration-500 hover:scale-110"
             >
             </a>
         </div>
          <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-            <a href="images/wanda4.jpg"
+            <a href="images/wanda4.webp"
              class="glightbox">
 
              <img
-                src="images/wanda4.jpg"
+                src="/images/wanda4.webp"
                 alt="Wanda"
                 class="w-full h-72 object-cover transition duration-500 hover:scale-110"
             >
             </a>
         </div>
          <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-            <a href="images/dr-strange.jpg"
+            <a href="images/dr-strange.webp"
              class="glightbox">
 
              <img
-                src="images/dr-strange.jpg"
+                src="/images/dr-strange.webp"
                 alt="Doctor Strange"
                 class="w-full h-72 object-cover transition duration-500 hover:scale-110"
             >
             </a>
         </div>
          <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-            <a href="images/nick4.jpg"
+            <a href="images/nick4.webp"
              class="glightbox">
 
              <img
-                src="images/nick4.jpg"
+                src="/images/nick4.webp"
                 alt="Nick Fury"
                 class="w-full h-72 object-cover transition duration-500 hover:scale-110"
             >
@@ -451,7 +419,7 @@
         </div>
     </div>
 
-</section>
+</div>
   <div class="text-center mt-12">
 
         <a

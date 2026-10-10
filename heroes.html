@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Герої Marvel: Iron Man, Captain America, Thor, Hulk, Hawkeye, Black Widow та Nick Fury. Обери героя і дізнайся більше.">
 
     <title>Герої — Avengers</title>
+
+    <link rel="icon" type="image/webp" href="/images/Avengers-symbol.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="/src/style.css">
 
@@ -17,299 +23,199 @@
 <body>
 
     <!-- МЕНЮ -->
+    <nav class="absolute top-5 right-1 md:top-[30px] md:right-[10px] z-[1000]">
 
-    <!-- МЕНЮ -->
-<nav class="absolute top-5 right-1 md:top-[30px] md:right-[10px] z-[1000]">
-
-    <!-- ================= DESKTOP MENU ================= -->
-    <div class="hidden md:flex items-center gap-8">
-
-        <a
-            href="index.html"
-            class="text-yellow-400 no-underline text-lg hover:text-white transition"
-        >
-            ГОЛОВНА
-        </a>
-
-        <div class="relative group">
+        <!-- ================= DESKTOP MENU ================= -->
+        <div class="hidden md:flex items-center gap-8">
 
             <a
-                href="heroes.html"
+                href="index.html"
                 class="text-yellow-400 no-underline text-lg hover:text-white transition"
             >
-                ГЕРОЇ ▾
+                ГОЛОВНА
             </a>
 
-            <div
-                class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max mt-2 bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
-            >
-                <a href="ironman.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
-                    IRON MAN
+            <div class="relative group">
+
+                <a
+                    href="heroes.html"
+                    class="text-yellow-400 no-underline text-lg hover:text-white transition"
+                >
+                    ГЕРОЇ ▾
                 </a>
 
-                <a href="captain1.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
-                    CAPTAIN AMERICA
-                </a>
+                <div
+                    class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
+                >
+                    <a href="ironman.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                        IRON MAN
+                    </a>
 
-                <a href="thor.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
-                    THOR
-                </a>
+                    <a href="captain1.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                        CAPTAIN AMERICA
+                    </a>
 
-                <a href="hulk.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
-                    HULK
-                </a>
+                    <a href="thor.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                        THOR
+                    </a>
 
-                <a href="hawkeye.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
-                    HAWKEYE
-                </a>
+                    <a href="hulk.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                        HULK
+                    </a>
 
-                <a href="black_widow.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
-                    BLACK WIDOW
-                </a>
+                    <a href="hawkeye.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                        HAWKEYE
+                    </a>
+
+                    <a href="black_widow.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                        BLACK WIDOW
+                    </a>
+                </div>
+
             </div>
-
-        </div>
-
-        <a
-            href="gallery.html"
-            class="text-yellow-400 no-underline text-lg hover:text-white transition"
-        >
-            ГАЛЕРЕЯ
-        </a>
-
-        <div class="relative group">
 
             <a
-                href="universe.html"
+                href="gallery.html"
                 class="text-yellow-400 no-underline text-lg hover:text-white transition"
             >
-                ВСЕСВІТ ▾
+                ГАЛЕРЕЯ
             </a>
 
-            <div
-                class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max mt-2 bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
+            <div class="relative group">
+
+                <a
+                    href="universe.html"
+                    class="text-yellow-400 no-underline text-lg hover:text-white transition"
+                >
+                    ВСЕСВІТ ▾
+                </a>
+
+                <div
+                    class="absolute top-full left-0 hidden group-hover:flex flex-col min-w-max bg-black/90 border border-yellow-400/30 rounded-md shadow-lg"
+                >
+                    <a href="movies.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                        ФІЛЬМИ
+                    </a>
+
+                    <a href="comics.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                        КОМІКСИ
+                    </a>
+
+                    <a href="test.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
+                        ТЕСТ
+                    </a>
+                </div>
+
+            </div>
+
+            <a
+                href="author.html"
+                class="text-yellow-400 no-underline text-lg hover:text-white transition"
             >
-                <a href="movies.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
-                    ФІЛЬМИ
-                </a>
+                ПРО АВТОРА
+            </a>
 
-                <a href="comics.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
-                    КОМІКСИ
-                </a>
+        </div>
 
-                <a href="test.html" class="px-4 py-2 text-yellow-400 hover:bg-yellow-400/25 hover:text-white whitespace-nowrap">
-                    ТЕСТ
-                </a>
+
+        <!-- ================= MOBILE MENU ================= -->
+        <div class="md:hidden">
+
+            <!-- Кнопка -->
+            <button
+                id="mobile-menu-btn"
+                type="button"
+                aria-label="Відкрити меню"
+                aria-expanded="false"
+                class="text-yellow-400 text-4xl leading-none bg-black/70 border border-yellow-400/40 rounded-lg px-3 py-1 hover:bg-yellow-400/20 transition"
+            >
+                ☰
+            </button>
+
+
+            <!-- Вертикальне меню -->
+            <div
+                id="mobile-menu"
+                class="hidden absolute right-0 top-14 w-64 bg-black/95 border border-yellow-400/40 rounded-xl shadow-2xl p-4"
+            >
+
+                <div class="flex flex-col gap-1">
+
+                    <a href="index.html" class="mobile-link">
+                        ГОЛОВНА
+                    </a>
+
+                    <!-- ГЕРОЇ -->
+                    <button
+                        id="mobile-heroes-btn"
+                        type="button"
+                        class="mobile-link text-left flex justify-between items-center"
+                    >
+                        ГЕРОЇ
+                        <span id="heroes-arrow">▾</span>
+                    </button>
+
+                    <div
+                        id="mobile-heroes"
+                        class="hidden pl-4 border-l border-yellow-400/30"
+                    >
+                        <a href="ironman.html" class="mobile-sublink">IRON MAN</a>
+                        <a href="captain1.html" class="mobile-sublink">CAPTAIN AMERICA</a>
+                        <a href="thor.html" class="mobile-sublink">THOR</a>
+                        <a href="hulk.html" class="mobile-sublink">HULK</a>
+                        <a href="hawkeye.html" class="mobile-sublink">HAWKEYE</a>
+                        <a href="black_widow.html" class="mobile-sublink">BLACK WIDOW</a>
+                    </div>
+
+                    <a href="gallery.html" class="mobile-link">
+                        ГАЛЕРЕЯ
+                    </a>
+
+                    <!-- ВСЕСВІТ -->
+                    <button
+                        id="mobile-universe-btn"
+                        type="button"
+                        class="mobile-link text-left flex justify-between items-center"
+                    >
+                        ВСЕСВІТ
+                        <span id="universe-arrow">▾</span>
+                    </button>
+
+                    <div
+                        id="mobile-universe"
+                        class="hidden pl-4 border-l border-yellow-400/30"
+                    >
+                        <a href="movies.html" class="mobile-sublink">ФІЛЬМИ</a>
+                        <a href="comics.html" class="mobile-sublink">КОМІКСИ</a>
+                        <a href="test.html" class="mobile-sublink">ТЕСТ</a>
+                    </div>
+
+                    <a href="author.html" class="mobile-link">
+                        ПРО АВТОРА
+                    </a>
+
+                </div>
             </div>
 
         </div>
 
-        <a
-            href="author.html"
-            class="text-yellow-400 no-underline text-lg hover:text-white transition"
+    </nav>
+
+    <a href="index.html" class="site-logo" aria-label="На головну">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 220.2 259.1"
+            aria-hidden="true"
         >
-            ПРО АВТОРА
-        </a>
-
-    </div>
-
-
-    <!-- ================= MOBILE MENU ================= -->
-    <div class="md:hidden">
-
-        <!-- Кнопка -->
-        <button
-            id="mobile-menu-btn"
-            type="button"
-            aria-label="Відкрити меню"
-            aria-expanded="false"
-            class="text-yellow-400 text-4xl leading-none bg-black/70 border border-yellow-400/40 rounded-lg px-3 py-1 hover:bg-yellow-400/20 transition"
-        >
-            ☰
-        </button>
-
-
-        <!-- Вертикальне меню -->
-        <div
-            id="mobile-menu"
-            class="hidden absolute right-0 top-14 w-64 bg-black/95 border border-yellow-400/40 rounded-xl shadow-2xl p-4"
-        >
-
-            <div class="flex flex-col gap-1">
-
-                <a
-                    href="index.html"
-                    class="mobile-link"
-                >
-                    ГОЛОВНА
-                </a>
-
-
-                <!-- ГЕРОЇ -->
-                <button
-                    id="mobile-heroes-btn"
-                    type="button"
-                    class="mobile-link text-left flex justify-between items-center"
-                >
-                    ГЕРОЇ
-                    <span id="heroes-arrow">▾</span>
-                </button>
-
-                <div
-                    id="mobile-heroes"
-                    class="hidden pl-4 border-l border-yellow-400/30"
-                >
-                    <a href="ironman.html" class="mobile-sublink">IRON MAN</a>
-                    <a href="captain1.html" class="mobile-sublink">CAPTAIN AMERICA</a>
-                    <a href="thor.html" class="mobile-sublink">THOR</a>
-                    <a href="hulk.html" class="mobile-sublink">HULK</a>
-                    <a href="hawkeye.html" class="mobile-sublink">HAWKEYE</a>
-                    <a href="black_widow.html" class="mobile-sublink">BLACK WIDOW</a>
-                </div>
-
-
-                <a
-                    href="gallery.html"
-                    class="mobile-link"
-                >
-                    ГАЛЕРЕЯ
-                </a>
-
-
-                <!-- ВСЕСВІТ -->
-                <button
-                    id="mobile-universe-btn"
-                    type="button"
-                    class="mobile-link text-left flex justify-between items-center"
-                >
-                    ВСЕСВІТ
-                    <span id="universe-arrow">▾</span>
-                </button>
-
-                <div
-                    id="mobile-universe"
-                    class="hidden pl-4 border-l border-yellow-400/30"
-                >
-                    <a href="movies.html" class="mobile-sublink">ФІЛЬМИ</a>
-                    <a href="comics.html" class="mobile-sublink">КОМІКСИ</a>
-                    <a href="test.html" class="mobile-sublink">ТЕСТ</a>
-                </div>
-
-
-                <a
-                    href="author.html"
-                    class="mobile-link"
-                >
-                    ПРО АВТОРА
-                </a>
-
-            </div>
-        </div>
-
-    </div>
-
-</nav>
-<a href="index.html" class="site-logo" aria-label="На головну">
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 220.2 259.1"
-        aria-hidden="true"
-    >
-        <path d="M120.8,15.8c-5.6,12.1-8.1,15.9-10,16.3c-1.4,0.2-7.5,1.1-13.7,1.8C51,39,13.9,72.1,2.1,118.4c-2.1,8.4-2.3,12.2-2,29.8c0.5,18.1,0.8,21.1,3.8,30c3.6,10.8,9.6,23.4,13.2,28l2.3,2.9l4.8-8.7l4.8-8.7l-2.9-5.5c-1.5-3-4.1-10.2-5.7-15.8c-3.9-13.4-4.1-35.1-0.6-49.2c8-31.7,34.2-58.5,65.7-67.2c7.6-2.1,18.8-3.3,18.8-2c0,0.2-22.6,46.5-50.2,102.8L3.9,257.3l4.1,0.8c2.3,0.5,11.6,0.8,20.6,0.8l16.4,0.1l16.3-37c9-20.3,16.8-37.2,17.1-37.4c0.5-0.2,12.1-0.6,25.9-0.6l25.1-0.2l0.6,7l0.6,7l17.8-13.7c9.8-7.5,17.9-14,17.9-14.3c0-0.5-7.7-8.1-17.2-17l-17.4-16.3l-0.4,6.7l-0.4,6.8H92.5l1.2-2.9c4-10.4,35.5-84.6,36.5-85.5c0.6-0.7,1.1,12,1.2,32.2v33.3l14.9,13.7l14.9,13.7l0.6-42.9c0.5-31.9,0.9-43,2-43.4c2.3-0.8,20.5,18.5,25.9,27.7c2.8,4.7,6.7,13.4,8.8,19.3c3.6,10.3,3.8,11.4,3.8,29.4c0,16.5-0.4,19.7-2.7,27c-8.8,26.5-25.7,46.2-48.9,57.4c-16.1,7.9-23.1,9.4-41.6,9.3c-15-0.1-16.4-0.4-27.6-4.2c-6.4-2.2-12.7-4.6-13.8-5c-1.6-0.7-2.6,0.5-5.5,6.9c-2,4.2-3.5,8-3.5,8.2c0,0.8,17.2,7.3,25.8,9.6c6,1.8,11.6,2.1,26.4,2.1c16.9-0.1,19.8-0.5,29.2-3.3c29.9-9,54.4-29.2,68-55.8c10.2-19.8,12.9-32.9,12.2-57.1c-0.6-14.8-1.1-18.9-3.9-27.3c-8.4-26.3-25.6-49.2-45.6-61.6l-7.6-4.7l-0.1-23.2V0h-34.6L120.8,15.8z"/>
-        <path d="M146,195.1l-15.2,13l15,0.4c8.3,0.1,15.4,0.1,15.6-0.1c0.2-0.4,0.2-6.3,0.1-13.4l-0.4-13L146,195.1z"/>
-    </svg>
-</a>
-
-
-<!-- MOBILE MENU STYLES -->
-<style>
-    .mobile-link {
-        display: block;
-        width: 100%;
-        padding: 12px 10px;
-        color: #facc15;
-        text-decoration: none;
-        font-size: 17px;
-        font-weight: 600;
-        border-radius: 6px;
-        transition: 0.2s;
-    }
-
-    .mobile-link:hover {
-        background: rgba(250, 204, 21, 0.15);
-        color: white;
-    }
-
-    .mobile-sublink {
-        display: block;
-        padding: 9px 8px;
-        color: #facc15;
-        text-decoration: none;
-        font-size: 14px;
-        border-radius: 5px;
-        transition: 0.2s;
-    }
-
-    .mobile-sublink:hover {
-        background: rgba(250, 204, 21, 0.15);
-        color: white;
-    }
-</style>
-
-
-<!-- MOBILE MENU JAVASCRIPT -->
-<script>
-    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-
-    const heroesBtn = document.getElementById("mobile-heroes-btn");
-    const heroesMenu = document.getElementById("mobile-heroes");
-    const heroesArrow = document.getElementById("heroes-arrow");
-
-    const universeBtn = document.getElementById("mobile-universe-btn");
-    const universeMenu = document.getElementById("mobile-universe");
-    const universeArrow = document.getElementById("universe-arrow");
-
-
-    // Головне меню
-    mobileMenuBtn.addEventListener("click", () => {
-
-        mobileMenu.classList.toggle("hidden");
-
-        const isOpen = !mobileMenu.classList.contains("hidden");
-
-        mobileMenuBtn.setAttribute("aria-expanded", isOpen);
-
-        mobileMenuBtn.textContent = isOpen ? "✕" : "☰";
-    });
-
-
-    // ГЕРОЇ
-    heroesBtn.addEventListener("click", () => {
-
-        heroesMenu.classList.toggle("hidden");
-
-        heroesArrow.textContent =
-            heroesMenu.classList.contains("hidden") ? "▾" : "▴";
-    });
-
-
-    // ВСЕСВІТ
-    universeBtn.addEventListener("click", () => {
-
-        universeMenu.classList.toggle("hidden");
-
-        universeArrow.textContent =
-            universeMenu.classList.contains("hidden") ? "▾" : "▴";
-    });
-</script>
-
+            <path d="M120.8,15.8c-5.6,12.1-8.1,15.9-10,16.3c-1.4,0.2-7.5,1.1-13.7,1.8C51,39,13.9,72.1,2.1,118.4c-2.1,8.4-2.3,12.2-2,29.8c0.5,18.1,0.8,21.1,3.8,30c3.6,10.8,9.6,23.4,13.2,28l2.3,2.9l4.8-8.7l4.8-8.7l-2.9-5.5c-1.5-3-4.1-10.2-5.7-15.8c-3.9-13.4-4.1-35.1-0.6-49.2c8-31.7,34.2-58.5,65.7-67.2c7.6-2.1,18.8-3.3,18.8-2c0,0.2-22.6,46.5-50.2,102.8L3.9,257.3l4.1,0.8c2.3,0.5,11.6,0.8,20.6,0.8l16.4,0.1l16.3-37c9-20.3,16.8-37.2,17.1-37.4c0.5-0.2,12.1-0.6,25.9-0.6l25.1-0.2l0.6,7l0.6,7l17.8-13.7c9.8-7.5,17.9-14,17.9-14.3c0-0.5-7.7-8.1-17.2-17l-17.4-16.3l-0.4,6.7l-0.4,6.8H92.5l1.2-2.9c4-10.4,35.5-84.6,36.5-85.5c0.6-0.7,1.1,12,1.2,32.2v33.3l14.9,13.7l14.9,13.7l0.6-42.9c0.5-31.9,0.9-43,2-43.4c2.3-0.8,20.5,18.5,25.9,27.7c2.8,4.7,6.7,13.4,8.8,19.3c3.6,10.3,3.8,11.4,3.8,29.4c0,16.5-0.4,19.7-2.7,27c-8.8,26.5-25.7,46.2-48.9,57.4c-16.1,7.9-23.1,9.4-41.6,9.3c-15-0.1-16.4-0.4-27.6-4.2c-6.4-2.2-12.7-4.6-13.8-5c-1.6-0.7-2.6,0.5-5.5,6.9c-2,4.2-3.5,8-3.5,8.2c0,0.8,17.2,7.3,25.8,9.6c6,1.8,11.6,2.1,26.4,2.1c16.9-0.1,19.8-0.5,29.2-3.3c29.9-9,54.4-29.2,68-55.8c10.2-19.8,12.9-32.9,12.2-57.1c-0.6-14.8-1.1-18.9-3.9-27.3c-8.4-26.3-25.6-49.2-45.6-61.6l-7.6-4.7l-0.1-23.2V0h-34.6L120.8,15.8z"/>
+            <path d="M146,195.1l-15.2,13l15,0.4c8.3,0.1,15.4,0.1,15.6-0.1c0.2-0.4,0.2-6.3,0.1-13.4l-0.4-13L146,195.1z"/>
+        </svg>
+    </a>
 
     <!-- ЗАГОЛОВОК -->
-
     <header class="pt-32 pb-8">
 
-        <h1 class="avengers-font text-6xl text-yellow-200 text-center">
+        <h1 class="avengers-font text-6xl text-orange-500 text-center">
             HEROES
         </h1>
 
@@ -317,173 +223,227 @@
 
 
     <!-- КАРТКИ -->
-
     <main class="px-6 pb-10">
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto items-center">
-    <div class="flex flex-col gap-6 justify-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto items-center">
 
-    <!-- IRON MAN -->
-    <a
-        href="ironman.html"
-        class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
-    >
-        <div class="h-56 overflow-hidden">
-            <img
-                src="images/tony.jpg"
-                alt="Iron Man"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
-            >
+            <!-- ЛІВА КОЛОНКА -->
+            <div class="flex flex-col gap-6 justify-center">
+
+                <!-- IRON MAN (перший екран: без lazy, з високим пріоритетом) -->
+                <a
+                    href="ironman.html"
+                    class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
+                >
+                    <div class="h-56 overflow-hidden">
+                        <img
+                            src="/images/tony.webp"
+                            alt="Iron Man"
+                            fetchpriority="high"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        >
+                    </div>
+
+                    <h2 class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white">
+                        IRON MAN
+                    </h2>
+                </a>
+
+
+                <!-- HAWKEYE -->
+                <a
+                    href="hawkeye.html"
+                    class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
+                >
+                    <div class="h-56 overflow-hidden">
+                        <img
+                            src="/images/hawkeye.webp"
+                            alt="Hawkeye"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        >
+                    </div>
+
+                    <h2 class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white">
+                        HAWKEYE
+                    </h2>
+                </a>
+
+
+                <!-- THOR (нижче першого екрана: lazy) -->
+                <a
+                    href="thor.html"
+                    class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
+                >
+                    <div class="h-56 overflow-hidden">
+                        <img
+                            src="/images/tor.webp"
+                            alt="Thor"
+                            loading="lazy"
+                            class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-110"
+                        >
+                    </div>
+
+                    <h2 class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white">
+                        THOR
+                    </h2>
+                </a>
+
+            </div>
+
+
+            <!-- ЦЕНТРАЛЬНА КОЛОНКА -->
+            <div class="flex justify-center">
+
+                <!-- NICK FURY -->
+                <a
+                    href="nick_fury.html"
+                    class="group block overflow-hidden rounded-xl border border-yellow-400/40 bg-black/70 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_35px_rgba(250,204,21,0.6)]"
+                >
+
+                    <div class="w-full max-w-[280px] overflow-hidden">
+                        <img
+                            src="/images/nick-fury.webp"
+                            alt="Nick Fury"
+                            width="900"
+                            height="900"
+                            class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-110"
+                        >
+                    </div>
+
+                    <h2 class="p-4 text-3xl text-yellow-400 text-center group-hover:text-white">
+                        NICK FURY
+                    </h2>
+
+                </a>
+
+            </div>
+
+
+            <!-- ПРАВА КОЛОНКА -->
+            <div class="flex flex-col gap-6 justify-center">
+
+                <!-- CAPTAIN AMERICA -->
+                <a
+                    href="captain1.html"
+                    class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
+                >
+                    <div class="h-56 overflow-hidden">
+                        <img
+                            src="/images/captain.webp"
+                            alt="Captain America"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        >
+                    </div>
+
+                    <h2 class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white">
+                        CAPTAIN AMERICA
+                    </h2>
+                </a>
+
+
+                <!-- BLACK WIDOW (нижче першого екрана: lazy) -->
+                <a
+                    href="black_widow.html"
+                    class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
+                >
+                    <div class="h-56 overflow-hidden">
+                        <img
+                            src="/images/black-widow.webp"
+                            alt="Black Widow"
+                            loading="lazy"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        >
+                    </div>
+
+                    <h2 class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white">
+                        BLACK WIDOW
+                    </h2>
+                </a>
+
+
+                <!-- HULK (нижче першого екрана: lazy) -->
+                <a
+                    href="hulk.html"
+                    class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
+                >
+                    <div class="h-56 overflow-hidden">
+                        <img
+                            src="/images/hulk.webp"
+                            alt="Hulk"
+                            loading="lazy"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+                        >
+                    </div>
+
+                    <h2 class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white">
+                        HULK
+                    </h2>
+                </a>
+
+            </div>
+
         </div>
 
-        <h2 class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white">
-            IRON MAN
-        </h2>
-    </a>
-
-
-    <!-- HAWKEYE -->
-    <a
-        href="hawkeye.html"
-        class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
-    >
-        <div class="h-56 overflow-hidden">
-            <img
-                src="images/hawkeye.jpg"
-                alt="Hawkeye"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
-            >
-        </div>
-
-        <h2 class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white">
-            HAWKEYE
-        </h2>
-    </a>
-
-
-    <!-- THOR -->
-    <a
-        href="thor.html"
-        class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
-    >
-        <div class="h-56 overflow-hidden">
-            <img
-                src="images/tor.jpg"
-                alt="Thor"
-                class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-110"
-            >
-        </div>
-
-        <h2 class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white">
-            THOR
-        </h2>
-    </a>
-
-</div>
-<div class="flex justify-center">
-
-    <!-- NICK FURY -->
-    <a
-        href="nick_fury.html"
-        class="group block overflow-hidden rounded-xl border border-yellow-400/40 bg-black/70 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_35px_rgba(250,204,21,0.6)]"
-    >
-
-        <div class="w-full max-w-[280px] overflow-hidden">
-            <img
-                src="images/nick-fury.jpg"
-                alt="Nick Fury"
-                class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-110"
-            >
-        </div>
-
-        <h2 class="p-4 text-3xl text-yellow-400 text-center group-hover:text-white">
-            NICK FURY
-        </h2>
-
-    </a>
-
-</div>
-<div class="flex flex-col gap-6 justify-center">
-
-    <!-- CAPTAIN AMERICA -->
-    <a
-        href="captain1.html"
-        class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
-    >
-        <div class="h-56 overflow-hidden">
-            <img
-                src="images/captain.jpg"
-                alt="Captain America"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
-            >
-        </div>
-
-        <h2 class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white">
-            CAPTAIN AMERICA
-        </h2>
-    </a>
-
-
-    <!-- BLACK WIDOW -->
-    <a
-        href="black_widow.html"
-        class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
-    >
-        <div class="h-56 overflow-hidden">
-            <img
-                src="images/black-widow.jpg"
-                alt="Black Widow"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
-            >
-        </div>
-
-        <h2 class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white">
-            BLACK WIDOW
-        </h2>
-    </a>
-
-
-    <!-- HULK -->
-    <a
-        href="hulk.html"
-        class="group block overflow-hidden rounded-xl border border-yellow-400/30 bg-black/60 transition duration-300 hover:scale-105 hover:border-yellow-400 hover:shadow-[0_0_25px_rgba(250,204,21,0.5)]"
-    >
-        <div class="h-56 overflow-hidden">
-            <img
-                src="images/hulk.jpg"
-                alt="Hulk"
-                class="w-full h-full object-cover transition duration-500 group-hover:scale-110"
-            >
-        </div>
-
-        <h2 class="p-4 text-2xl text-yellow-400 text-center group-hover:text-white">
-            HULK
-        </h2>
-    </a>
-
-</div>
-
-          
     </main>
- <footer class="site-footer">
-    <div class="footer-content">
 
-    <a href="mailto:liudmyla.kuzmych.pp.2025@lpnu.ua">
-EMAIL:  liudmyla.kuzmych.pp.2025@lpnu.ua
-    </a>
-    <p>
-        © 2026 Avengers. Усі права захищені.
-    </p>
+    <footer class="site-footer">
+        <div class="footer-content">
 
-    <a href="tel:+380683544820">
-       NUMBER: +380 68 354 4820
-    </a>
+            <a href="mailto:liudmyla.kuzmych.pp.2025@lpnu.ua">
+                EMAIL: liudmyla.kuzmych.pp.2025@lpnu.ua
+            </a>
 
-    
+            <p>
+                © 2026 Avengers. Усі права захищені.
+            </p>
 
-</div>
+            <a href="tel:+380683544820">
+                NUMBER: +380 68 354 4820
+            </a>
 
-</footer>
+        </div>
+    </footer>
+
+    <!-- MOBILE MENU JAVASCRIPT -->
+    <script>
+        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        const heroesBtn = document.getElementById("mobile-heroes-btn");
+        const heroesMenu = document.getElementById("mobile-heroes");
+        const heroesArrow = document.getElementById("heroes-arrow");
+
+        const universeBtn = document.getElementById("mobile-universe-btn");
+        const universeMenu = document.getElementById("mobile-universe");
+        const universeArrow = document.getElementById("universe-arrow");
+
+        // Головне меню
+        mobileMenuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+
+            const isOpen = !mobileMenu.classList.contains("hidden");
+
+            mobileMenuBtn.setAttribute("aria-expanded", isOpen);
+            mobileMenuBtn.textContent = isOpen ? "✕" : "☰";
+        });
+
+        // ГЕРОЇ
+        heroesBtn.addEventListener("click", () => {
+            heroesMenu.classList.toggle("hidden");
+
+            heroesArrow.textContent =
+                heroesMenu.classList.contains("hidden") ? "▾" : "▴";
+        });
+
+        // ВСЕСВІТ
+        universeBtn.addEventListener("click", () => {
+            universeMenu.classList.toggle("hidden");
+
+            universeArrow.textContent =
+                universeMenu.classList.contains("hidden") ? "▾" : "▴";
+        });
+    </script>
+
 </body>
 
 </html>

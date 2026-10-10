@@ -408,7 +408,7 @@ function showResult() {
                 "Вітаю, ти Залізна Людина!";
 
             resultImage.src =
-                "images/tony4.jpg";
+                "images/tony4.webp";
 
             resultImage.alt =
                 "Залізна Людина";
@@ -422,7 +422,7 @@ function showResult() {
                 "Вітаю, ти Капітан Америка!";
 
             resultImage.src =
-                "images/captain.jpg";
+                "images/captain.webp";
 
             resultImage.alt =
                 "Капітан Америка";
@@ -436,7 +436,7 @@ function showResult() {
                 "Вітаю, ти Тор!";
 
             resultImage.src =
-                "images/tor.jpg";
+                "images/tor.webp";
 
             resultImage.alt =
                 "Тор";
@@ -450,7 +450,7 @@ function showResult() {
                 "Вітаю, ти Чорна Вдова!";
 
             resultImage.src =
-                "images/black-widow.jpg";
+                "images/black-widow.webp";
 
             resultImage.alt =
                 "Чорна Вдова";
