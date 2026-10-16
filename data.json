@@ -1,23 +1,14 @@
 [
   { "name": "Iron Man", "image": "/images/tony4.webp" },
-  { "name": "Captain America", "image": "/images/cap4.webp" }
-]async function loadGallery() {
-    try {
-        const res = await fetch("/data.json");
-        const heroes = await res.json();
-
-        document.getElementById("gallery-grid").innerHTML = heroes.map(h => `
-            <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
-                <a href="${h.image}" class="glightbox">
-                    <img src="${h.image}" alt="${h.name}"
-                         class="w-full h-72 object-cover transition duration-500 hover:scale-110">
-                </a>
-            </div>
-        `).join("");
-
-        GLightbox({ selector: ".glightbox" });  // ініціалізувати ПІСЛЯ рендеру
-    } catch (e) {
-        console.error("Не вдалося завантажити дані", e);
-    }
-}
-loadGallery();
+  { "name": "Captain America", "image": "/images/cap4.webp" },
+  { "name": "Thor", "image": "/images/thor4.webp" },
+  { "name": "Hulk", "image": "/images/hulk4.webp" },
+  { "name": "Hawkeye", "image": "/images/hawkeye4.webp" },
+  { "name": "Black Widow", "image": "/images/black-widow4.webp" },
+  { "name": "Spiderman", "image": "/images/spiderman4.webp" },
+  { "name": "Falcon", "image": "/images/falcon4.webp" },
+  { "name": "Black Panther", "image": "/images/black4.webp" },
+  { "name": "Wanda", "image": "/images/wanda4.webp" },
+  { "name": "Doctor Strange", "image": "/images/dr-strange.webp" },
+  { "name": "Nick Fury", "image": "/images/nick4.webp" }
+]
