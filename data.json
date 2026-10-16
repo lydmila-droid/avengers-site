@@ -1,0 +1,23 @@
+[
+  { "name": "Iron Man", "image": "/images/tony4.webp" },
+  { "name": "Captain America", "image": "/images/cap4.webp" }
+]async function loadGallery() {
+    try {
+        const res = await fetch("/data.json");
+        const heroes = await res.json();
+
+        document.getElementById("gallery-grid").innerHTML = heroes.map(h => `
+            <div class="overflow-hidden rounded-xl border border-yellow-400/30 bg-black/50">
+                <a href="${h.image}" class="glightbox">
+                    <img src="${h.image}" alt="${h.name}"
+                         class="w-full h-72 object-cover transition duration-500 hover:scale-110">
+                </a>
+            </div>
+        `).join("");
+
+        GLightbox({ selector: ".glightbox" });  // ініціалізувати ПІСЛЯ рендеру
+    } catch (e) {
+        console.error("Не вдалося завантажити дані", e);
+    }
+}
+loadGallery();
