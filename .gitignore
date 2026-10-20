@@ -26,3 +26,5 @@ optimize-images.mjs
 compress-more.mjs
 optimize-images.mjs
 compress-more.mjs
+.vercel
+.env*

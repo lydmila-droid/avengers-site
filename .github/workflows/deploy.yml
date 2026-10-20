@@ -1,0 +1,71 @@
+# .github/workflows/deploy.yml
+# Автоматична збірка, перевірка та деплой при кожному git push у гілку main.
+
+name: CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+
+  # --------------------------------------------------------
+  # 1. Збірка і тест: виконується на кожен push та pull request
+  # --------------------------------------------------------
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Завантажити код
+        uses: actions/checkout@v4
+
+      - name: Налаштувати Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Встановити залежності
+        run: npm ci
+
+      - name: Зібрати проєкт
+        run: npm run build
+
+      - name: Перевірити збірку (сторінки, посилання, картинки)
+        run: npm test
+
+  # --------------------------------------------------------
+  # 2. Деплой на Vercel: тільки після успішного тесту
+  #    і тільки для push у main (не для pull request)
+  # --------------------------------------------------------
+  deploy:
+    needs: build-and-test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    env:
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+    steps:
+      - name: Завантажити код
+        uses: actions/checkout@v4
+
+      - name: Налаштувати Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Встановити Vercel CLI
+        run: npm install --global vercel@latest
+
+      - name: Отримати налаштування проєкту з Vercel
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Зібрати проєкт для Vercel
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Опублікувати на Vercel
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}

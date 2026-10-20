@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Фільми — Avengers</title>
-    <link rel="icon" type="image/jpeg" href="/images/symbol.png">
+    <meta name="description" content="Фільми Marvel: картки ключових стрічок і повна хронологія MCU з посиланнями на IMDb.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Avengers">
+    <meta property="og:title" content="Фільми — Avengers">
+    <meta property="og:description" content="Фільми Marvel: картки ключових стрічок і повна хронологія MCU з посиланнями на IMDb.">
+    <meta property="og:url" content="https://avengers-site.vercel.app/movies.html">
+    <meta property="og:image" content="https://avengers-site.vercel.app/og_cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="uk_UA">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="/images/symbol.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -236,222 +247,16 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
 
-                <!-- ФІЛЬМИ -->
+                <!-- ФІЛЬМИ (картки малює /movies.js з /data/movies.json) -->
 
                 <div class="lg:col-span-3">
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-
-                        <!-- IRON MAN -->
-
-                        <div class="bg-black/70 border border-yellow-400/30 rounded-xl overflow-hidden
-                                    transition duration-300
-                                    hover:-translate-y-2
-                                    hover:border-yellow-400
-                                    hover:shadow-[0_0_25px_rgba(250,204,21,0.35)]">
-
-                            <img
-                                src="/images/ironman5.webp"
-                                alt="Iron Man"
-                                class="w-full h-[380px] object-cover transition duration-500 hover:scale-105"
-                            >
-
-                            <div class="p-5">
-
-                                <h2 class="avengers-font text-3xl text-yellow-400 mb-2">
-                                    IRON MAN
-                                </h2>
-
-                                <p class="text-yellow-300 mb-3">
-                                    2008
-                                </p>
-
-                                <p class="text-white leading-relaxed">
-                                    Історія Тоні Старка — геніального винахідника,
-                                    який створив бронекостюм і став одним із найвідоміших
-                                    героїв Marvel.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- THOR -->
-
-                        <div class="bg-black/70 border border-yellow-400/30 rounded-xl overflow-hidden
-                                    transition duration-300
-                                    hover:-translate-y-2
-                                    hover:border-yellow-400
-                                    hover:shadow-[0_0_25px_rgba(250,204,21,0.35)]">
-
-                            <img
-                                src="/images/thor5.webp"
-                                alt="Thor"
-                                class="w-full h-[380px] object-cover transition duration-500 hover:scale-105"
-                            >
-
-                            <div class="p-5">
-
-                                <h2 class="avengers-font text-3xl text-yellow-400 mb-2">
-                                    THOR
-                                </h2>
-
-                                <p class="text-yellow-300 mb-3">
-                                    2011
-                                </p>
-
-                                <p class="text-white leading-relaxed">
-                                    Історія могутнього бога грому Тора, який був вигнаний
-                                    на Землю та повинен був навчитися бути справжнім героєм.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- CAPTAIN AMERICA -->
-
-                        <div class="bg-black/70 border border-yellow-400/30 rounded-xl overflow-hidden
-                                    transition duration-300
-                                    hover:-translate-y-2
-                                    hover:border-yellow-400
-                                    hover:shadow-[0_0_25px_rgba(250,204,21,0.35)]">
-
-                            <img
-                                src="/images/cap5.webp"
-                                alt="Captain America"
-                                class="w-full h-[380px] object-cover transition duration-500 hover:scale-105"
-                            >
-
-                            <div class="p-5">
-
-                                <h2 class="avengers-font text-3xl text-yellow-400 mb-2">
-                                    CAPTAIN AMERICA
-                                </h2>
-
-                                <p class="text-yellow-300 mb-3">
-                                    2011
-                                </p>
-
-                                <p class="text-white leading-relaxed">
-                                    Стів Роджерс стає суперсолдатом після експерименту
-                                    та перетворюється на символ мужності, честі й справедливості.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- THE AVENGERS -->
-
-                        <div class="bg-black/70 border border-yellow-400/30 rounded-xl overflow-hidden
-                                    transition duration-300
-                                    hover:-translate-y-2
-                                    hover:border-yellow-400
-                                    hover:shadow-[0_0_25px_rgba(250,204,21,0.35)]">
-
-                            <img
-                                src="/images/avengers5.webp"
-                                alt="The Avengers"
-                                class="w-full h-[380px] object-cover transition duration-500 hover:scale-105"
-                            >
-
-                            <div class="p-5">
-
-                                <h2 class="avengers-font text-3xl text-yellow-400 mb-2">
-                                    THE AVENGERS
-                                </h2>
-
-                                <p class="text-yellow-300 mb-3">
-                                    2012
-                                </p>
-
-                                <p class="text-white leading-relaxed">
-                                    Наймогутніші герої Землі вперше об'єднуються,
-                                    щоб захистити планету від глобальної загрози.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- CIVIL WAR -->
-
-                        <div class="bg-black/70 border border-yellow-400/30 rounded-xl overflow-hidden
-                                    transition duration-300
-                                    hover:-translate-y-2
-                                    hover:border-yellow-400
-                                    hover:shadow-[0_0_25px_rgba(250,204,21,0.35)]">
-
-                            <img
-                                src="/images/civilwar5.webp"
-                                alt="Captain America Civil War"
-                                class="w-full h-[380px] object-cover transition duration-500 hover:scale-105"
-                            >
-
-                            <div class="p-5">
-
-                                <h2 class="avengers-font text-3xl text-yellow-400 mb-2">
-                                    CIVIL WAR
-                                </h2>
-
-                                <p class="text-yellow-300 mb-3">
-                                    2016
-                                </p>
-
-                                <p class="text-white leading-relaxed">
-                                    Месники розділяються на два табори через суперечку
-                                    щодо контролю над супергероями.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- INFINITY WAR -->
-
-                        <div class="bg-black/70 border border-yellow-400/30 rounded-xl overflow-hidden
-                                    transition duration-300
-                                    hover:-translate-y-2
-                                    hover:border-yellow-400
-                                    hover:shadow-[0_0_25px_rgba(250,204,21,0.35)]">
-
-                            <img
-                                src="/images/infinitywar5.webp"
-                                alt="Avengers Infinity War"
-                                class="w-full h-[380px] object-cover transition duration-500 hover:scale-105"
-                            >
-
-                            <div class="p-5">
-
-                                <h2 class="avengers-font text-3xl text-yellow-400 mb-2">
-                                    INFINITY WAR
-                                </h2>
-
-                                <p class="text-yellow-300 mb-3">
-                                    2018
-                                </p>
-
-                                <p class="text-white leading-relaxed">
-                                    Месники та їхні союзники стикаються з Таносом,
-                                    який прагне заволодіти всіма Каменями Нескінченності.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div> <!-- кінець сітки карток -->
+                    <div id="movies-list" class="grid grid-cols-1 sm:grid-cols-2 gap-8"></div>
 
                 </div> <!-- кінець колонки ФІЛЬМИ -->
 
 
-                <!-- ХРОНОЛОГІЯ MCU -->
+                <!-- ХРОНОЛОГІЯ MCU (посилання малює /movies.js з /data/movies.json) -->
 
                 <div class="lg:col-span-2">
 
@@ -459,165 +264,14 @@
                         ХРОНОЛОГІЯ MCU
                     </h2>
 
-                    <div class="grid grid-cols-3 gap-x-6 gap-y-3">
-                        <a href="https://www.imdb.com/title/tt0371746/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            1. IRON MAN
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt3498820/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            11. ANT-MAN
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt10872600/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            21. SPIDER-MAN: NO WAY HOME
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt1228705/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            2. IRON MAN 2
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt2250912/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            12. SPIDER-MAN: HOMECOMING
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt10648342/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            22. DOCTOR STRANGE IN THE MULTIVERSE OF MADNESS
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt0800369/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            3. THOR
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt3501632/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            13. THOR: RAGNAROK
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt10648350/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            23. THOR: LOVE AND THUNDER
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt0458339/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            4. CAPTAIN AMERICA: THE FIRST AVENGER
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt1825683/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            14. BLACK PANTHER
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt10648342/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            24. BLACK PANTHER: WAKANDA FOREVER
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt0848228/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            5. THE AVENGERS
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt4154756/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            15. AVENGERS: INFINITY WAR
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt10954600/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            25. ANT-MAN AND THE WASP: QUANTUMANIA
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt1300854/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            6. IRON MAN 3
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt5095030/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            16. ANT-MAN AND THE WASP
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt6791350/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            26. GUARDIANS OF THE GALAXY VOL. 3
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt1981115/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            7. THOR: THE DARK WORLD
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt4154796/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            17. AVENGERS: ENDGAME
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt9362722/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            27. THE MARVELS
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt1843866/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            8. CAPTAIN AMERICA: THE WINTER SOLDIER
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt6320628/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            18. SPIDER-MAN: FAR FROM HOME
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt6263850/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            28. CAPTAIN AMERICA: BRAVE NEW WORLD
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt2015381/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            9. GUARDIANS OF THE GALAXY
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt3480822/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            19. BLACK WIDOW
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt10676048/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            29. THUNDERBOLTS*
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt2395427/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            10. AVENGERS: AGE OF ULTRON
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt9032400/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            20. ETERNALS
-                        </a>
-
-                        <a href="https://www.imdb.com/title/tt10676052/" target="_blank"
-                            class="block text-yellow-400 text-lg hover:text-white transition">
-                            30. THE FANTASTIC FOUR: FIRST STEPS
-                        </a>
-
-                    </div>
+                    <div id="timeline-list" class="grid grid-cols-1 gap-y-3 md:grid-flow-col md:grid-rows-10 md:gap-x-6"></div>
 
                 </div>
 
             </div>
 
         </section>
-       <!-- YOUTUBE -->
+
 <!-- YOUTUBE -->
 <section class="max-w-5xl mx-auto mt-16">
 
@@ -705,5 +359,6 @@ EMAIL:  liudmyla.kuzmych.pp.2025@lpnu.ua
 
 </footer>
 <script src="/theme.js"></script>
+<script src="/movies.js" defer></script>
 </body>
 </html>

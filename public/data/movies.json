@@ -1,0 +1,42 @@
+{
+  "movies": [
+    { "title": "IRON MAN", "year": "2008", "image": "/images/ironman5.webp", "alt": "Iron Man", "description": "Історія Тоні Старка — геніального винахідника, який створив бронекостюм і став одним із найвідоміших героїв Marvel." },
+    { "title": "THOR", "year": "2011", "image": "/images/thor5.webp", "alt": "Thor", "description": "Історія могутнього бога грому Тора, який був вигнаний на Землю та повинен був навчитися бути справжнім героєм." },
+    { "title": "CAPTAIN AMERICA", "year": "2011", "image": "/images/cap5.webp", "alt": "Captain America", "description": "Стів Роджерс стає суперсолдатом після експерименту та перетворюється на символ мужності, честі й справедливості." },
+    { "title": "THE AVENGERS", "year": "2012", "image": "/images/avengers5.webp", "alt": "The Avengers", "description": "Наймогутніші герої Землі вперше об'єднуються, щоб захистити планету від глобальної загрози." },
+    { "title": "CIVIL WAR", "year": "2016", "image": "/images/civilwar5.webp", "alt": "Captain America Civil War", "description": "Месники розділяються на два табори через суперечку щодо контролю над супергероями." },
+    { "title": "INFINITY WAR", "year": "2018", "image": "/images/infinitywar5.webp", "alt": "Avengers Infinity War", "description": "Месники та їхні союзники стикаються з Таносом, який прагне заволодіти всіма Каменями Нескінченності." }
+  ],
+  "timeline": [
+    { "order": 1, "title": "IRON MAN", "url": "https://www.imdb.com/title/tt0371746/" },
+    { "order": 2, "title": "IRON MAN 2", "url": "https://www.imdb.com/title/tt1228705/" },
+    { "order": 3, "title": "THOR", "url": "https://www.imdb.com/title/tt0800369/" },
+    { "order": 4, "title": "CAPTAIN AMERICA: THE FIRST AVENGER", "url": "https://www.imdb.com/title/tt0458339/" },
+    { "order": 5, "title": "THE AVENGERS", "url": "https://www.imdb.com/title/tt0848228/" },
+    { "order": 6, "title": "IRON MAN 3", "url": "https://www.imdb.com/title/tt1300854/" },
+    { "order": 7, "title": "THOR: THE DARK WORLD", "url": "https://www.imdb.com/title/tt1981115/" },
+    { "order": 8, "title": "CAPTAIN AMERICA: THE WINTER SOLDIER", "url": "https://www.imdb.com/title/tt1843866/" },
+    { "order": 9, "title": "GUARDIANS OF THE GALAXY", "url": "https://www.imdb.com/title/tt2015381/" },
+    { "order": 10, "title": "AVENGERS: AGE OF ULTRON", "url": "https://www.imdb.com/title/tt2395427/" },
+    { "order": 11, "title": "ANT-MAN", "url": "https://www.imdb.com/title/tt3498820/" },
+    { "order": 12, "title": "SPIDER-MAN: HOMECOMING", "url": "https://www.imdb.com/title/tt2250912/" },
+    { "order": 13, "title": "THOR: RAGNAROK", "url": "https://www.imdb.com/title/tt3501632/" },
+    { "order": 14, "title": "BLACK PANTHER", "url": "https://www.imdb.com/title/tt1825683/" },
+    { "order": 15, "title": "AVENGERS: INFINITY WAR", "url": "https://www.imdb.com/title/tt4154756/" },
+    { "order": 16, "title": "ANT-MAN AND THE WASP", "url": "https://www.imdb.com/title/tt5095030/" },
+    { "order": 17, "title": "AVENGERS: ENDGAME", "url": "https://www.imdb.com/title/tt4154796/" },
+    { "order": 18, "title": "SPIDER-MAN: FAR FROM HOME", "url": "https://www.imdb.com/title/tt6320628/" },
+    { "order": 19, "title": "BLACK WIDOW", "url": "https://www.imdb.com/title/tt3480822/" },
+    { "order": 20, "title": "ETERNALS", "url": "https://www.imdb.com/title/tt9032400/" },
+    { "order": 21, "title": "SPIDER-MAN: NO WAY HOME", "url": "https://www.imdb.com/title/tt10872600/" },
+    { "order": 22, "title": "DOCTOR STRANGE IN THE MULTIVERSE OF MADNESS", "url": "https://www.imdb.com/title/tt10648342/" },
+    { "order": 23, "title": "THOR: LOVE AND THUNDER", "url": "https://www.imdb.com/title/tt10648350/" },
+    { "order": 24, "title": "BLACK PANTHER: WAKANDA FOREVER", "url": "https://www.imdb.com/title/tt9114286/" },
+    { "order": 25, "title": "ANT-MAN AND THE WASP: QUANTUMANIA", "url": "https://www.imdb.com/title/tt10954600/" },
+    { "order": 26, "title": "GUARDIANS OF THE GALAXY VOL. 3", "url": "https://www.imdb.com/title/tt6791350/" },
+    { "order": 27, "title": "THE MARVELS", "url": "https://www.imdb.com/title/tt9362722/" },
+    { "order": 28, "title": "CAPTAIN AMERICA: BRAVE NEW WORLD", "url": "https://www.imdb.com/title/tt6263850/" },
+    { "order": 29, "title": "THUNDERBOLTS*", "url": "https://www.imdb.com/title/tt10676048/" },
+    { "order": 30, "title": "THE FANTASTIC FOUR: FIRST STEPS", "url": "https://www.imdb.com/title/tt10676052/" }
+  ]
+}
