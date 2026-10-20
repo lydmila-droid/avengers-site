@@ -33,6 +33,7 @@ function exists(reference) {
 function isLocal(reference) {
     return (
         reference !== "/" &&
+         !reference.startsWith("/_vercel/") && // скрипти, які віддає сам Vercel
         !reference.startsWith("#") &&
         !reference.startsWith("//") &&
         !/^[a-z][a-z0-9+.-]*:/i.test(reference) // http:, https:, mailto:, tel:, data: ...
