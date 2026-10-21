@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 /* =========================================================
    BASE: стилі для самих тегів (h1, body, main).
    Утиліти Tailwind (text-*, p-*, ...) зможуть їх перебити.
@@ -287,83 +288,79 @@
         color: white;
     }
 
-    /* ---------- Статистика на головній ---------- */
     /* ---------- Hero-секція на головній ---------- */
-.hero-section {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 90%;
-    max-width: 1100px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
+    .hero-section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        max-width: 1100px;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        text-align: center;
 
-    opacity: 0;
-    animation: statsAppear 5s forwards;
-}
+        /* З'являється разом із завершенням інтро-відео */
+        opacity: 0;
+        animation: statsAppear 5s forwards;
+    }
 
-.hero-tag {
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    font-size: 1.25rem;
-    color: #ecaa05;
-    margin-bottom: 8px;
-}
+    .hero-tag {
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        font-size: 1.25rem;
+        color: #ecaa05;
+        margin-bottom: 8px;
+    }
 
-.hero-title {
-    font-size: clamp(2.4rem, 7vw, 5rem);
-    line-height: 1;
-    color: #ecaa05;
-    margin-bottom: 14px;
-}
+    .hero-title {
+        font-size: clamp(2.4rem, 7vw, 5rem);
+        line-height: 1;
+        color: #ecaa05;
+        margin-bottom: 14px;
+    }
 
-.hero-subtitle {
-    max-width: 640px;
-    margin: 0 auto 26px;
-    font-size: 1.15rem;
-    color: #ecaa05;
-}
+    .hero-subtitle {
+        max-width: 640px;
+        margin: 0 auto 26px;
+        font-size: 1.15rem;
+        color: #ecaa05;
+    }
 
-.hero-actions {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-bottom: 34px;
-}
+    .hero-actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-bottom: 34px;
+    }
 
-.hero-btn {
-    display: inline-block;
-    padding: 13px 28px;
-    border: 2px solid #facc15;
-    border-radius: 10px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+    .hero-btn {
+        display: inline-block;
+        padding: 13px 28px;
+        border: 2px solid #facc15;
+        border-radius: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-.hero-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 18px rgba(250, 204, 21, 0.45);
-}
+    .hero-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0 18px rgba(250, 204, 21, 0.45);
+    }
 
-.hero-btn-primary {
-    background: #facc15;
-    color: #111;
-    text-shadow: none;
-}
+    .hero-btn-primary {
+        background: #facc15;
+        color: #111;
+        text-shadow: none;
+    }
 
-.hero-btn-secondary {
-    background: rgba(0, 0, 0, 0.6);
-    color: #facc15;
-}
+    .hero-btn-secondary {
+        background: rgba(0, 0, 0, 0.6);
+        color: #facc15;
+    }
 
-/* компактніша статистика всередині hero */
-.hero-section .stat-card { padding: 16px 10px; }
-.hero-section .stat-number { font-size: 2.8rem; }
-.hero-section .stat-card p { margin-top: 6px; font-size: 1rem; }
-
+    /* ---------- Статистика (всередині hero) ---------- */
     .stats-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -394,65 +391,17 @@
 
     .stat-card p {
         margin-top: 10px;
-        color: #fef08a;
+        color: #facc15;
         font-size: 1.1rem;
     }
 
-    /* ---------- На телефоні ---------- */
-      /* ---------- На телефоні ---------- */
+    /* компактніша статистика всередині hero */
+    .hero-section .stat-card { padding: 16px 10px; }
+    .hero-section .stat-number { font-size: 2.8rem; }
+    .hero-section .stat-card p { margin-top: 6px; font-size: 1rem; }
+
+    /* ---------- На телефоні (фони) ---------- */
     @media (max-width: 768px) {
-
-        /* Hero: починається під логотипом, меню і "THE AVENGERS" */
-        .hero-section {
-            width: 92%;
-            top: 120px;
-            transform: translateX(-50%);
-        }
-
-        .hero-tag {
-            display: none;
-        }
-
-        .hero-title {
-            font-size: 2.4rem;
-            margin-bottom: 10px;
-        }
-
-        .hero-subtitle {
-            font-size: 0.95rem;
-            margin-bottom: 18px;
-        }
-
-        .hero-actions {
-            margin-bottom: 20px;
-            gap: 10px;
-        }
-
-        .hero-btn {
-            padding: 11px 20px;
-            font-size: 0.95rem;
-        }
-
-        /* Статистика: 2 колонки, компактні картки */
-        .stats-grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
-        }
-
-        .hero-section .stat-card {
-            padding: 10px 6px;
-            border-radius: 12px;
-        }
-
-        .hero-section .stat-number {
-            font-size: 1.8rem;
-        }
-
-        .hero-section .stat-card p {
-            font-size: 0.75rem;
-            margin-top: 2px;
-        }
-
         /* background-attachment: fixed гальмує мобільні браузери */
         body,
         .ironman-page,
@@ -466,6 +415,7 @@
         }
     }
 }
+
 /* =========================================================
    KEYFRAMES: шар не потрібен, кожна анімація описана один раз
    ========================================================= */
@@ -503,6 +453,9 @@
     }
 }
 
+/* =========================================================
+   ПЕРЕМИКАЧ ТЕМИ
+   ========================================================= */
 #theme-toggle {
     position: fixed;
     bottom: 20px;
@@ -527,7 +480,10 @@
     transform: scale(1.08);
 }
 
-/* Світла тема */
+/* =========================================================
+   СВІТЛА ТЕМА (червоно-біла)
+   ========================================================= */
+
 /* Загальний фон лише для головної сторінки */
 html[data-theme="light"] body:not(
     .ironman-page,
@@ -540,11 +496,13 @@ html[data-theme="light"] body:not(
 ) {
     background-image: url("/images/Avengers_Infinity_War.webp");
 }
+
 html[data-theme="light"] #theme-toggle {
     background: #d71920;
     color: white;
     border-color: #d71920;
 }
+
 /* Заголовок THE AVENGERS у світлій темі */
 html[data-theme="light"] .intro-content h1 {
     color: #f5f2f2 !important;
@@ -556,31 +514,15 @@ html[data-theme="light"] .intro-content h1 {
         -2px 2px 0 #d71920,
         0 0 12px rgba(215, 25, 32, 0.35);
 }
-/* Заголовки у світлій темі — стиль Marvel */
-html[data-theme="light"] h1,
-html[data-theme="light"] h2,
-html[data-theme="light"] h3,
-html[data-theme="light"] h4 {
-    color: #fdfbfb !important;
-    -webkit-text-stroke: 1px #d71920;
-    text-shadow:
-        1px 1px 0 #d71920,
-        -1px -1px 0 #d71920,
-        1px -1px 0 #d71920,
-        -1px 1px 0 #d71920;
-}
-
-/* ===== ЧЕРВОНО-БІЛА СВІТЛА ТЕМА ===== */
 
 /* Основний текст */
 html[data-theme="light"] body {
     color: #ffffff;
     -webkit-text-stroke: 0.25px #d71920;
-    text-shadow:
-        1px 1px 3px rgba(0, 0, 0, 0.9);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 }
 
-/* Заголовки: чорний + червоний */
+/* Заголовки — стиль Marvel */
 html[data-theme="light"] h1,
 html[data-theme="light"] h2,
 html[data-theme="light"] h3,
@@ -609,32 +551,34 @@ html[data-theme="light"] button {
     border-color: #ffffff;
 }
 
-/* Картки */
-html[data-theme="light"] .stats-card,
+/* Футер */
 html[data-theme="light"] .site-footer {
     border-color: #d71920;
 }
-/* Логотип у світлій темі */
+
+/* Логотип */
 html[data-theme="light"] .site-logo {
     color: #d71920;
     fill: #d71920;
 }
 
-/* Якщо SVG використовує fill безпосередньо на елементах */
 html[data-theme="light"] .site-logo path {
     fill: #d71920;
 }
+
+/* ---------- Hero-секція у світлій темі ---------- */
 html[data-theme="light"] .hero-btn-primary {
     background: #d71920;
     color: #fff;
     border-color: #fff;
 }
+
 html[data-theme="light"] .hero-btn-secondary {
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     border-color: #d71920;
 }
-/* ---------- Hero-секція у світлій темі: біло-червоний стиль ---------- */
+
 html[data-theme="light"] .hero-tag,
 html[data-theme="light"] .hero-subtitle,
 html[data-theme="light"] .hero-section .stat-card p {
@@ -661,4 +605,64 @@ html[data-theme="light"] .stat-card {
 
 html[data-theme="light"] .stat-card:hover {
     border-color: #ffffff;
+}
+
+/* =========================================================
+   HERO НА ТЕЛЕФОНІ (в кінці файлу, поза @layer,
+   щоб гарантовано перебивати все вище)
+   ========================================================= */
+@media (max-width: 768px) {
+
+    .hero-section {
+        width: 92%;
+        top: 190px;                     /* нижче за "THE AVENGERS" */
+        transform: translateX(-50%);
+    }
+
+    .hero-tag {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+        margin-bottom: 8px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 14px;
+    }
+
+    /* кнопки в один ряд, щоб економити висоту */
+    .hero-actions {
+        flex-wrap: nowrap;
+        gap: 8px;
+        margin-bottom: 14px;
+    }
+
+    .hero-btn {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+
+    /* 4 картки в один ряд */
+    .hero-section .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+    }
+
+    .hero-section .stat-card {
+        padding: 8px 4px;
+        border-radius: 10px;
+    }
+
+    .hero-section .stat-number {
+        font-size: 1.6rem;
+    }
+
+    .hero-section .stat-card p {
+        font-size: 0.65rem;
+        margin-top: 2px;
+    }
 }
