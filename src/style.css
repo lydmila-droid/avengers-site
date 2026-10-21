@@ -288,27 +288,81 @@
     }
 
     /* ---------- Статистика на головній ---------- */
-    .stats-section {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 90%;
-        max-width: 1100px;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        text-align: center;
+    /* ---------- Hero-секція на головній ---------- */
+.hero-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 1100px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
 
-        /* Спочатку статистику не видно, вона проявляється разом із відео */
-        opacity: 0;
-        animation: statsAppear 5s forwards;
-    }
+    opacity: 0;
+    animation: statsAppear 5s forwards;
+}
 
-    .stats-title {
-        color: #ecaa05;
-        font-size: 3rem;
-        margin-bottom: 35px;
-        text-shadow: 0 0 15px rgba(61, 49, 4, 0.5);
-    }
+.hero-tag {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 1.25rem;
+    color: #ecaa05;
+    margin-bottom: 8px;
+}
+
+.hero-title {
+    font-size: clamp(2.4rem, 7vw, 5rem);
+    line-height: 1;
+    color: #ecaa05;
+    margin-bottom: 14px;
+}
+
+.hero-subtitle {
+    max-width: 640px;
+    margin: 0 auto 26px;
+    font-size: 1.15rem;
+    color: #ecaa05;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 34px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 13px 28px;
+    border: 2px solid #facc15;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px rgba(250, 204, 21, 0.45);
+}
+
+.hero-btn-primary {
+    background: #facc15;
+    color: #111;
+    text-shadow: none;
+}
+
+.hero-btn-secondary {
+    background: rgba(0, 0, 0, 0.6);
+    color: #facc15;
+}
+
+/* компактніша статистика всередині hero */
+.hero-section .stat-card { padding: 16px 10px; }
+.hero-section .stat-number { font-size: 2.8rem; }
+.hero-section .stat-card p { margin-top: 6px; font-size: 1rem; }
 
     .stats-grid {
         display: grid;
@@ -543,4 +597,42 @@ html[data-theme="light"] .site-logo {
 /* Якщо SVG використовує fill безпосередньо на елементах */
 html[data-theme="light"] .site-logo path {
     fill: #d71920;
+}
+html[data-theme="light"] .hero-btn-primary {
+    background: #d71920;
+    color: #fff;
+    border-color: #fff;
+}
+html[data-theme="light"] .hero-btn-secondary {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-color: #d71920;
+}
+/* ---------- Hero-секція у світлій темі: біло-червоний стиль ---------- */
+html[data-theme="light"] .hero-tag,
+html[data-theme="light"] .hero-subtitle,
+html[data-theme="light"] .hero-section .stat-card p {
+    color: #ffffff;
+    -webkit-text-stroke: 0.25px #d71920;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+html[data-theme="light"] .stat-number {
+    color: #ffffff;
+    -webkit-text-stroke: 1px #d71920;
+    text-shadow:
+        1px 1px 0 #d71920,
+        -1px -1px 0 #d71920,
+        1px -1px 0 #d71920,
+        -1px 1px 0 #d71920;
+}
+
+html[data-theme="light"] .stat-card {
+    background: rgba(0, 0, 0, 0.55);
+    border-color: #d71920;
+    box-shadow: 0 0 20px rgba(215, 25, 32, 0.25);
+}
+
+html[data-theme="light"] .stat-card:hover {
+    border-color: #ffffff;
 }
