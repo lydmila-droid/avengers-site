@@ -30,10 +30,7 @@
     <!-- JS БІБЛІОТЕКА -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
+   
 </head>
 
 
@@ -468,20 +465,12 @@
             ЛЬВІВСЬКА ПОЛІТЕХНІКА
         </h3>
 
-        <div class="w-full h-96 rounded-xl overflow-hidden">
-
-       
-<iframe
-    src="https://www.google.com/maps?q=Національний+університет+Львівська+політехніка&output=embed"
-    style="border: 0; width: 100%; height: 100%;"
-    allowfullscreen
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-    title="Карта розташування Львівської політехніки">
-</iframe>
-
-
-        </div>
+      <div id="map-box" class="w-full h-96 rounded-xl overflow-hidden flex items-center justify-center bg-black/40">
+    <button id="map-btn" type="button"
+        class="px-8 py-4 bg-yellow-400 text-black font-bold rounded-xl hover:bg-white transition">
+        ПОКАЗАТИ КАРТУ
+    </button>
+</div>
 
     </div>
 
@@ -783,6 +772,13 @@ universeBtn.addEventListener("click", () => {
 
     universeArrow.textContent =
         universeMenu.classList.contains("hidden") ? "▾" : "▴";
+});
+document.getElementById("map-btn").addEventListener("click", () => {
+    document.getElementById("map-box").innerHTML =
+        '<iframe src="https://www.google.com/maps?q=Національний+університет+Львівська+політехніка&output=embed" ' +
+        'style="border:0;width:100%;height:100%;" allowfullscreen ' +
+        'referrerpolicy="no-referrer-when-downgrade" ' +
+        'title="Карта розташування Львівської політехніки"></iframe>';
 });
 </script>
  <footer class="site-footer">
