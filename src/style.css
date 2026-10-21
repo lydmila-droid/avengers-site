@@ -399,31 +399,58 @@
     }
 
     /* ---------- На телефоні ---------- */
+      /* ---------- На телефоні ---------- */
     @media (max-width: 768px) {
-        .stats-section {
+
+        /* Hero: починається під логотипом, меню і "THE AVENGERS" */
+        .hero-section {
             width: 92%;
+            top: 120px;
+            transform: translateX(-50%);
         }
 
-        .stats-title {
-            font-size: 2.2rem;
-            margin-bottom: 25px;
+        .hero-tag {
+            display: none;
         }
 
+        .hero-title {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-subtitle {
+            font-size: 0.95rem;
+            margin-bottom: 18px;
+        }
+
+        .hero-actions {
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .hero-btn {
+            padding: 11px 20px;
+            font-size: 0.95rem;
+        }
+
+        /* Статистика: 2 колонки, компактні картки */
         .stats-grid {
             grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
+            gap: 8px;
         }
 
-        .stat-card {
-            padding: 18px 10px;
+        .hero-section .stat-card {
+            padding: 10px 6px;
+            border-radius: 12px;
         }
 
-        .stat-number {
-            font-size: 3rem;
+        .hero-section .stat-number {
+            font-size: 1.8rem;
         }
 
-        .stat-card p {
-            font-size: 0.9rem;
+        .hero-section .stat-card p {
+            font-size: 0.75rem;
+            margin-top: 2px;
         }
 
         /* background-attachment: fixed гальмує мобільні браузери */
@@ -439,7 +466,6 @@
         }
     }
 }
-
 /* =========================================================
    KEYFRAMES: шар не потрібен, кожна анімація описана один раз
    ========================================================= */
